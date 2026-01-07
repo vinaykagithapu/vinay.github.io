@@ -1,28 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://vinay.github.io/blog/</id>
+    <id>https://vinaykagithapu.github.io/blog/</id>
     <title>Vinay Kagithapu Blog</title>
     <updated>2026-01-07T16:22:11.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://vinay.github.io/blog/"/>
+    <link rel="alternate" href="https://vinaykagithapu.github.io/blog/"/>
     <subtitle>Vinay Kagithapu Blog</subtitle>
-    <icon>https://vinay.github.io/img/favicon.ico</icon>
+    <icon>https://vinaykagithapu.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Why Every DevOps Engineer Needs a Portfolio Website]]></title>
-        <id>https://vinay.github.io/blog/portfolio-launch/</id>
-        <link href="https://vinay.github.io/blog/portfolio-launch/"/>
+        <id>https://vinaykagithapu.github.io/blog/portfolio-launch/</id>
+        <link href="https://vinaykagithapu.github.io/blog/portfolio-launch/"/>
         <updated>2026-01-07T16:22:11.000Z</updated>
         <summary type="html"><![CDATA[A resume shows what you did.]]></summary>
         <content type="html"><![CDATA[<p>A resume shows <strong>what</strong> you did.
 A portfolio shows <strong>how well</strong> you did it.</p>
-<p>In this post, I explain why every DevOps engineer should maintain a
-public portfolio and blog.</p>]]></content>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-build-a-portfolio">Why Build a Portfolio?<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#why-build-a-portfolio" class="hash-link" aria-label="Direct link to Why Build a Portfolio?" title="Direct link to Why Build a Portfolio?" translate="no">​</a></h2>
+<p>In this post, I explain why every DevOps engineer should maintain a public portfolio and blog.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-showcase-real-skills">1. Showcase Real Skills<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#1-showcase-real-skills" class="hash-link" aria-label="Direct link to 1. Showcase Real Skills" title="Direct link to 1. Showcase Real Skills" translate="no">​</a></h3>
+<p>Traditional resumes list technologies you've used, but a portfolio demonstrates <strong>how</strong> you use them. When you deploy a website using GitHub Actions, configure Kubernetes clusters, or optimize LLM inference pipelines, you're showing potential employers exactly what you can do.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-document-your-learning-journey">2. Document Your Learning Journey<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#2-document-your-learning-journey" class="hash-link" aria-label="Direct link to 2. Document Your Learning Journey" title="Direct link to 2. Document Your Learning Journey" translate="no">​</a></h3>
+<p>A blog helps you:</p>
+<ul>
+<li class="">Solidify your understanding of complex topics</li>
+<li class="">Create a reference for your future self</li>
+<li class="">Help others who face similar challenges</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-stand-out-in-the-job-market">3. Stand Out in the Job Market<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#3-stand-out-in-the-job-market" class="hash-link" aria-label="Direct link to 3. Stand Out in the Job Market" title="Direct link to 3. Stand Out in the Job Market" translate="no">​</a></h3>
+<p>Most engineers have similar resumes. A well-maintained portfolio with technical blogs sets you apart. It shows:</p>
+<ul>
+<li class="">Initiative and self-motivation</li>
+<li class="">Communication skills</li>
+<li class="">Passion for the craft</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-build-your-personal-brand">4. Build Your Personal Brand<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#4-build-your-personal-brand" class="hash-link" aria-label="Direct link to 4. Build Your Personal Brand" title="Direct link to 4. Build Your Personal Brand" translate="no">​</a></h3>
+<p>Your portfolio becomes your professional identity online. Whether it's LLM infrastructure, Kubernetes, or DevSecOps, your content establishes you as someone who knows their domain.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next">What's Next?<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?" translate="no">​</a></h2>
+<p>I'll be sharing deep dives into:</p>
+<ul>
+<li class=""><strong>LLM Infrastructure</strong>: vLLM, TensorRT-LLM, SGLang deployments</li>
+<li class=""><strong>Kubernetes</strong>: Production-grade cluster management</li>
+<li class=""><strong>DevSecOps</strong>: Security-first CI/CD pipelines</li>
+<li class=""><strong>Cloud-Native</strong>: Scalable, resilient architectures</li>
+</ul>
+<p>Stay tuned!</p>]]></content>
         <author>
             <name>Vinay Kagithapu</name>
             <uri>https://github.com/vinaykagithapu</uri>
         </author>
-        <category label="devops" term="devops"/>
-        <category label="portfolio" term="portfolio"/>
-        <category label="github-pages" term="github-pages"/>
+        <category label="DevOps" term="DevOps"/>
+        <category label="Portfolio" term="Portfolio"/>
+        <category label="GitHub Pages" term="GitHub Pages"/>
     </entry>
 </feed>
