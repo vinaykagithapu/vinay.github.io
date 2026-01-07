@@ -1,19 +1,34 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+devops:
+  label: DevOps
+  permalink: /devops
+  description: DevOps practices, CI/CD, infrastructure automation
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+portfolio:
+  label: Portfolio
+  permalink: /portfolio
+  description: Portfolio and career-related posts
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+github-pages:
+  label: GitHub Pages
+  permalink: /github-pages
+  description: GitHub Pages hosting and deployment
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+kubernetes:
+  label: Kubernetes
+  permalink: /kubernetes
+  description: Kubernetes container orchestration
+
+llm:
+  label: LLM
+  permalink: /llm
+  description: Large Language Models and AI infrastructure
+
+cloud:
+  label: Cloud
+  permalink: /cloud
+  description: Cloud computing and cloud-native technologies
+
+ai:
+  label: AI
+  permalink: /ai
+  description: Artificial Intelligence and Machine Learning
