@@ -150,7 +150,7 @@ const config = {
               },
               {
                 label: 'RSS Feed',
-                to: '/blog/rss.xml',
+                href: 'https://vinaykagithapu.github.io/blog/rss.xml',
               },
             ],
           },
