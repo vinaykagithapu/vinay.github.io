@@ -4,42 +4,42 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'LLM Infrastructure',
+    emoji: '🧠',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Building and optimizing inference platforms with vLLM, TensorRT-LLM, and SGLang. 
+        Expertise in deploying and scaling large language models for production workloads.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Kubernetes & Cloud Native',
+    emoji: '☸️',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Designing and managing scalable, resilient Kubernetes clusters. 
+        Experienced in cloud infrastructure, container orchestration, and microservices architecture.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'DevSecOps & Automation',
+    emoji: '🔒',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Implementing secure CI/CD pipelines and infrastructure as code. 
+        Focused on building systems that are reliable, fast, and secure by design.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({emoji, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <span className={styles.featureEmoji}>{emoji}</span>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
