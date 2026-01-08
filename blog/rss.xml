@@ -4,50 +4,105 @@
         <title>Vinay Kagithapu Blog</title>
         <link>https://vinaykagithapu.github.io/blog/</link>
         <description>Vinay Kagithapu Blog</description>
-        <lastBuildDate>Wed, 07 Jan 2026 16:22:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Why Every DevOps Engineer Needs a Portfolio Website]]></title>
-            <link>https://vinaykagithapu.github.io/blog/portfolio-launch/</link>
-            <guid>https://vinaykagithapu.github.io/blog/portfolio-launch/</guid>
-            <pubDate>Wed, 07 Jan 2026 16:22:11 GMT</pubDate>
-            <description><![CDATA[A resume shows what you did.]]></description>
-            <content:encoded><![CDATA[<p>A resume shows <strong>what</strong> you did.
-A portfolio shows <strong>how well</strong> you did it.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-build-a-portfolio">Why Build a Portfolio?<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#why-build-a-portfolio" class="hash-link" aria-label="Direct link to Why Build a Portfolio?" title="Direct link to Why Build a Portfolio?" translate="no">​</a></h2>
-<p>In this post, I explain why every DevOps engineer should maintain a public portfolio and blog.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-showcase-real-skills">1. Showcase Real Skills<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#1-showcase-real-skills" class="hash-link" aria-label="Direct link to 1. Showcase Real Skills" title="Direct link to 1. Showcase Real Skills" translate="no">​</a></h3>
-<p>Traditional resumes list technologies you've used, but a portfolio demonstrates <strong>how</strong> you use them. When you deploy a website using GitHub Actions, configure Kubernetes clusters, or optimize LLM inference pipelines, you're showing potential employers exactly what you can do.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-document-your-learning-journey">2. Document Your Learning Journey<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#2-document-your-learning-journey" class="hash-link" aria-label="Direct link to 2. Document Your Learning Journey" title="Direct link to 2. Document Your Learning Journey" translate="no">​</a></h3>
-<p>A blog helps you:</p>
+            <title><![CDATA[Building an AI-Powered Sentiment Analysis Web App]]></title>
+            <link>https://vinaykagithapu.github.io/blog/sentiment-analysis-app/</link>
+            <guid>https://vinaykagithapu.github.io/blog/sentiment-analysis-app/</guid>
+            <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Ever wondered how companies analyze thousands of customer reviews in seconds? In this post, I walk through building a real-time sentiment analysis application using HuggingFace Transformers, FastAPI, and Streamlit.]]></description>
+            <content:encoded><![CDATA[<p>Ever wondered how companies analyze thousands of customer reviews in seconds? In this post, I walk through building a real-time sentiment analysis application using HuggingFace Transformers, FastAPI, and Streamlit.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-the-problem">🎯 The Problem<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#-the-problem" class="hash-link" aria-label="Direct link to 🎯 The Problem" title="Direct link to 🎯 The Problem" translate="no">​</a></h2>
+<p>Understanding the emotional tone of text is crucial for:</p>
 <ul>
-<li class="">Solidify your understanding of complex topics</li>
-<li class="">Create a reference for your future self</li>
-<li class="">Help others who face similar challenges</li>
+<li class=""><strong>Customer feedback analysis</strong> - Quickly categorize reviews as positive or negative</li>
+<li class=""><strong>Social media monitoring</strong> - Track brand sentiment in real-time</li>
+<li class=""><strong>Market research</strong> - Gauge public opinion on products or services</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-stand-out-in-the-job-market">3. Stand Out in the Job Market<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#3-stand-out-in-the-job-market" class="hash-link" aria-label="Direct link to 3. Stand Out in the Job Market" title="Direct link to 3. Stand Out in the Job Market" translate="no">​</a></h3>
-<p>Most engineers have similar resumes. A well-maintained portfolio with technical blogs sets you apart. It shows:</p>
+<p>Manually analyzing text at scale is impossible. We need AI.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-architecture-overview">🏗️ Architecture Overview<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#%EF%B8%8F-architecture-overview" class="hash-link" aria-label="Direct link to 🏗️ Architecture Overview" title="Direct link to 🏗️ Architecture Overview" translate="no">​</a></h2>
+<p>The application follows a clean separation of concerns:</p>
+<p><img decoding="async" loading="lazy" alt="arch" src="https://vinaykagithapu.github.io/assets/images/image-a91acdea4fbeb3af975cf066234a0fba.png" width="1153" height="631" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="backend-fastapi">Backend (FastAPI)<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#backend-fastapi" class="hash-link" aria-label="Direct link to Backend (FastAPI)" title="Direct link to Backend (FastAPI)" translate="no">​</a></h3>
+<p>The backend serves as the inference engine, exposing REST APIs for:</p>
 <ul>
-<li class="">Initiative and self-motivation</li>
-<li class="">Communication skills</li>
-<li class="">Passion for the craft</li>
+<li class=""><code>/models</code> - List available sentiment models</li>
+<li class=""><code>/predict</code> - Perform sentiment classification</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-build-your-personal-brand">4. Build Your Personal Brand<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#4-build-your-personal-brand" class="hash-link" aria-label="Direct link to 4. Build Your Personal Brand" title="Direct link to 4. Build Your Personal Brand" translate="no">​</a></h3>
-<p>Your portfolio becomes your professional identity online. Whether it's LLM infrastructure, Kubernetes, or DevSecOps, your content establishes you as someone who knows their domain.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next">What's Next?<a href="https://vinaykagithapu.github.io/blog/portfolio-launch/#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?" translate="no">​</a></h2>
-<p>I'll be sharing deep dives into:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="frontend-streamlit">Frontend (Streamlit)<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#frontend-streamlit" class="hash-link" aria-label="Direct link to Frontend (Streamlit)" title="Direct link to Frontend (Streamlit)" translate="no">​</a></h3>
+<p>A clean, interactive UI where users can:</p>
 <ul>
-<li class=""><strong>LLM Infrastructure</strong>: vLLM, TensorRT-LLM, SGLang deployments</li>
-<li class=""><strong>Kubernetes</strong>: Production-grade cluster management</li>
-<li class=""><strong>DevSecOps</strong>: Security-first CI/CD pipelines</li>
-<li class=""><strong>Cloud-Native</strong>: Scalable, resilient architectures</li>
+<li class="">Enter text for analysis</li>
+<li class="">Select multiple models for comparison</li>
+<li class="">View predictions with confidence scores</li>
 </ul>
-<p>Stay tuned!</p>]]></content:encoded>
-            <category>DevOps</category>
-            <category>Portfolio</category>
-            <category>GitHub Pages</category>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ml-models-huggingface">ML Models (HuggingFace)<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#ml-models-huggingface" class="hash-link" aria-label="Direct link to ML Models (HuggingFace)" title="Direct link to ML Models (HuggingFace)" translate="no">​</a></h3>
+<p>The app supports multiple pre-trained models:</p>
+<ul>
+<li class=""><strong>DistilBERT</strong> - Lightweight and fast</li>
+<li class=""><strong>BERTweet</strong> - Optimized for social media text</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-key-features">🚀 Key Features<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#-key-features" class="hash-link" aria-label="Direct link to 🚀 Key Features" title="Direct link to 🚀 Key Features" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-time-predictions">Real-Time Predictions<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#real-time-predictions" class="hash-link" aria-label="Direct link to Real-Time Predictions" title="Direct link to Real-Time Predictions" translate="no">​</a></h3>
+<p>Users get instant feedback as they type. The models classify text into:</p>
+<ul>
+<li class="">✅ <strong>Positive</strong> - Expresses satisfaction or happiness</li>
+<li class="">❌ <strong>Negative</strong> - Expresses dissatisfaction or frustration</li>
+<li class="">⚪ <strong>Neutral</strong> - Factual statements without emotional charge</li>
+<li class="">🔄 <strong>Mixed</strong> - Contains both positive and negative sentiments</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="confidence-scores">Confidence Scores<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#confidence-scores" class="hash-link" aria-label="Direct link to Confidence Scores" title="Direct link to Confidence Scores" translate="no">​</a></h3>
+<p>Each prediction comes with a confidence percentage, helping users understand the model's certainty.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="multi-model-comparison">Multi-Model Comparison<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#multi-model-comparison" class="hash-link" aria-label="Direct link to Multi-Model Comparison" title="Direct link to Multi-Model Comparison" translate="no">​</a></h3>
+<p>Compare predictions from different models side-by-side. This is especially useful for:</p>
+<ul>
+<li class="">Understanding model strengths and weaknesses</li>
+<li class="">Validating predictions across architectures</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-example-use-cases">💡 Example Use Cases<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#-example-use-cases" class="hash-link" aria-label="Direct link to 💡 Example Use Cases" title="Direct link to 💡 Example Use Cases" translate="no">​</a></h2>
+<p>Try these sample inputs to see the app in action:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">I absolutely love this product! It exceeded my expectations.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ Positive (High Confidence)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">This is the worst experience I've ever had.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ Negative (High Confidence)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">The package arrived yesterday.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ Neutral (Medium Confidence)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">The movie started off boring but ended with an amazing twist.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ Mixed (Model-dependent)</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="financial-sentiment-analysis">Financial Sentiment Analysis<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#financial-sentiment-analysis" class="hash-link" aria-label="Direct link to Financial Sentiment Analysis" title="Direct link to Financial Sentiment Analysis" translate="no">​</a></h3>
+<p>The app also handles domain-specific text like financial news:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Revenue increased in North America but sharp losses in </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">European markets offset most of the gains.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ Mixed/Neutral</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-running-locally">🔧 Running Locally<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#-running-locally" class="hash-link" aria-label="Direct link to 🔧 Running Locally" title="Direct link to 🔧 Running Locally" translate="no">​</a></h2>
+<p>Clone and set up the project:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/vinaykagithapu/sentiment-analysis-app.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd sentiment-analysis-app</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Backend setup</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">python -m venv .venv-be</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">source .venv-be/bin/activate</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pip install -r backend/requirements.txt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">export HUGGING_FACE_HUB_TOKEN=&lt;your_token&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">uvicorn backend.main:app --reload --port 8000</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Frontend setup (new terminal)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">python -m venv .venv-fe</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">source .venv-fe/bin/activate</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pip install -r frontend/requirements.txt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">streamlit run frontend/app.py</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-kubernetes-deployment">☸️ Kubernetes Deployment<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#%EF%B8%8F-kubernetes-deployment" class="hash-link" aria-label="Direct link to ☸️ Kubernetes Deployment" title="Direct link to ☸️ Kubernetes Deployment" translate="no">​</a></h2>
+<p>The project includes Kubernetes manifests for production deployment. This makes it easy to:</p>
+<ul>
+<li class="">Scale horizontally based on demand</li>
+<li class="">Deploy in any cloud environment</li>
+<li class="">Implement health checks and rolling updates</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-future-improvements">🔮 Future Improvements<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#-future-improvements" class="hash-link" aria-label="Direct link to 🔮 Future Improvements" title="Direct link to 🔮 Future Improvements" translate="no">​</a></h2>
+<p>I'm planning to add:</p>
+<ul>
+<li class=""><strong>GPU optimization</strong> for faster inference</li>
+<li class=""><strong>Multi-language support</strong> beyond English</li>
+<li class=""><strong>Batch processing</strong> for analyzing large datasets</li>
+<li class=""><strong>Cloud deployment</strong> for public access</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-conclusion">🎉 Conclusion<a href="https://vinaykagithapu.github.io/blog/sentiment-analysis-app/#-conclusion" class="hash-link" aria-label="Direct link to 🎉 Conclusion" title="Direct link to 🎉 Conclusion" translate="no">​</a></h2>
+<p>Building this project reinforced my understanding of:</p>
+<ul>
+<li class="">Serving ML models in production environments</li>
+<li class="">Designing clean API interfaces</li>
+<li class="">Creating intuitive user experiences for AI applications</li>
+</ul>
+<p>Check out the full source code on <a href="https://github.com/vinaykagithapu/sentiment-analysis-app" target="_blank" rel="noopener noreferrer" class="">GitHub</a> and feel free to contribute!</p>
+<hr>
+<p><em>Have questions or suggestions? Feel free to open an issue on the repository!</em></p>]]></content:encoded>
+            <category>AI</category>
+            <category>NLP</category>
+            <category>Python</category>
+            <category>FastAPI</category>
+            <category>HuggingFace</category>
+            <category>Machine Learning</category>
+            <category>Kubernetes</category>
         </item>
     </channel>
 </rss>
