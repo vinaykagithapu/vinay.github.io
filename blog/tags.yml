@@ -32,3 +32,28 @@ ai:
   label: AI
   permalink: /ai
   description: Artificial Intelligence and Machine Learning
+
+nlp:
+  label: NLP
+  permalink: /nlp
+  description: Natural Language Processing
+
+python:
+  label: Python
+  permalink: /python
+  description: Python programming and applications
+
+fastapi:
+  label: FastAPI
+  permalink: /fastapi
+  description: FastAPI web framework
+
+huggingface:
+  label: HuggingFace
+  permalink: /huggingface
+  description: HuggingFace Transformers and models
+
+machine-learning:
+  label: Machine Learning
+  permalink: /machine-learning
+  description: Machine Learning projects and techniques
