@@ -6,7 +6,9 @@ description: "Understanding the key roles and responsibilities in a successful M
 
 # Building an ML Engineering Team
 
-A successful Machine Learning project isn't just about algorithms and data—it's about **people working together** toward a common goal. In this section, we'll explore the key roles in an ML engineering team and how they collaborate to deliver production ML systems.
+In the previous section, we explored what MLOps is and why it matters. But great systems are built by great teams. A successful Machine Learning project isn't just about algorithms and data—it's about **people working together** toward a common goal.
+
+In this section, we'll explore the key roles in an ML engineering team and how they collaborate to deliver production ML systems.
 
 ---
 
@@ -362,16 +364,17 @@ Here's the technology stack XYZShopSmart will use (we'll implement each componen
 
 ## What's Next?
 
-In the upcoming sections, we'll dive deeper into each aspect of XYZShopSmart's ML journey:
+We've introduced the four pillars of an ML team, but the **MLOps Engineer** role deserves a deeper look. This role is critical for bridging the gap between model development and production systems.
 
-| Section | Topic | What You'll Learn |
-|---------|-------|-------------------|
-| **Data Pipelines** | Building ETL for ML | How to build feature pipelines with Airflow and Spark |
-| **Feature Store** | Feast Implementation | How to store and serve features for training and inference |
-| **Model Training** | MLflow & Experiment Tracking | How to track experiments and version models |
-| **Model Deployment** | Kubernetes & Seldon | How to deploy models at scale |
-| **Monitoring** | Observability for ML | How to detect drift and maintain model health |
+In the next section, we'll explore:
+
+| Topic | What You'll Learn |
+|-------|-------------------|
+| **MLOps Engineer Role** | Deep dive into responsibilities and skills |
+| **Core Competencies** | DevOps + ML + Data Engineering blend |
+| **Best Practices** | Industry standards for production ML |
+| **Day-to-Day Tasks** | What an MLOps Engineer actually does |
 
 :::info Up Next
-In the next section, we'll start building **XYZShopSmart's data pipeline** — the foundation for our recommendation system.
+In the next section, we'll take a **deep dive into the MLOps Engineer role** — the critical bridge between Data Science and Operations.
 :::
