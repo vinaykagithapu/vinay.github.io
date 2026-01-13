@@ -1,26 +1,123 @@
 /**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
+ * Hero Section - Professional Design
+ * CSS modules with scoped styling
  */
 
+/* =============================================
+   HERO BANNER - Main Container
+   ============================================= */
+
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  
+  /* Animated gradient background */
+  background: linear-gradient(135deg, 
+    #4f46e5 0%, 
+    #7c3aed 35%, 
+    #6366f1 65%, 
+    #4f46e5 100%
+  );
+  background-size: 300% 300%;
+  animation: gradientFlow 12s ease infinite;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* Decorative overlay patterns */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.4) 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(99, 102, 241, 0.35) 0%, transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(168, 85, 247, 0.25) 0%, transparent 40%);
+  pointer-events: none;
+  animation: floatOverlay 10s ease-in-out infinite;
+}
+
+/* Bottom gradient fade */
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%);
+  pointer-events: none;
+}
+
+/* Dark theme adjustments */
+:global([data-theme='dark']) .heroBanner {
+  background: linear-gradient(135deg, 
+    #312e81 0%, 
+    #4c1d95 35%, 
+    #3730a3 65%, 
+    #312e81 100%
+  );
+  background-size: 300% 300%;
+}
+
+:global([data-theme='dark']) .heroBanner::before {
+  background: 
+    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.5) 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(99, 102, 241, 0.45) 0%, transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(168, 85, 247, 0.35) 0%, transparent 40%);
+}
+
+:global([data-theme='dark']) .heroBanner::after {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+@keyframes gradientFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
 }
+
+@keyframes floatOverlay {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-15px) scale(1.02);
+    opacity: 0.9;
+  }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+}
+
+/* =============================================
+   HERO CONTENT - Layout Container
+   ============================================= */
 
 .heroContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -28,99 +125,314 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 5rem;
   }
 }
+
+/* =============================================
+   PROFILE SECTION
+   ============================================= */
 
 .profileSection {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeInScale 1s ease-out;
 }
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =============================================
+   PROFILE IMAGE WRAPPER
+   ============================================= */
 
 .profileImageWrapper {
   position: relative;
   display: inline-block;
 }
 
+/* =============================================
+   PROFILE IMAGE
+   ============================================= */
+
 .profileImage {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 
-    0 10px 40px rgba(0, 0, 0, 0.3),
-    0 0 0 4px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid rgba(255, 255, 255, 0.95);
   position: relative;
   z-index: 2;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Multi-layered shadow for depth */
+  box-shadow: 
+    0 0 0 6px rgba(255, 255, 255, 0.15),
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    0 0 80px rgba(139, 92, 246, 0.4),
+    inset 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .profileImage:hover {
-  transform: scale(1.05);
+  transform: scale(1.06) rotate(3deg);
+  border-color: rgba(255, 255, 255, 1);
   box-shadow: 
-    0 15px 50px rgba(0, 0, 0, 0.4),
-    0 0 0 6px rgba(255, 255, 255, 0.2);
+    0 0 0 8px rgba(255, 255, 255, 0.25),
+    0 30px 70px rgba(0, 0, 0, 0.45),
+    0 0 120px rgba(139, 92, 246, 0.6),
+    inset 0 0 30px rgba(0, 0, 0, 0.1);
 }
+
+/* Dark theme profile adjustments */
+:global([data-theme='dark']) .profileImage {
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 
+    0 0 0 6px rgba(255, 255, 255, 0.1),
+    0 20px 50px rgba(0, 0, 0, 0.6),
+    0 0 80px rgba(139, 92, 246, 0.5),
+    inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+:global([data-theme='dark']) .profileImage:hover {
+  box-shadow: 
+    0 0 0 8px rgba(255, 255, 255, 0.2),
+    0 30px 70px rgba(0, 0, 0, 0.7),
+    0 0 130px rgba(139, 92, 246, 0.7),
+    inset 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .profileImage {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profileImage {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* =============================================
+   PROFILE GLOW EFFECT
+   ============================================= */
 
 .profileGlow {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), transparent);
-  filter: blur(20px);
   z-index: 1;
-  animation: pulse 3s ease-in-out infinite;
+  pointer-events: none;
+  
+  /* Animated gradient glow */
+  background: conic-gradient(
+    from 0deg,
+    rgba(139, 92, 246, 0.5) 0deg,
+    rgba(99, 102, 241, 0.4) 90deg,
+    rgba(168, 85, 247, 0.5) 180deg,
+    rgba(79, 70, 229, 0.4) 270deg,
+    rgba(139, 92, 246, 0.5) 360deg
+  );
+  filter: blur(35px);
+  animation: rotateGlow 15s linear infinite, pulseGlow 4s ease-in-out infinite;
 }
 
-@keyframes pulse {
+@keyframes rotateGlow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes pulseGlow {
   0%, 100% {
     opacity: 0.6;
-    transform: translate(-50%, -50%) scale(1);
+    filter: blur(35px);
   }
   50% {
-    opacity: 0.9;
-    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.85;
+    filter: blur(40px);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .profileImage {
-    width: 240px;
-    height: 240px;
-  }
-  
   .profileGlow {
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .profileGlow {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+/* =============================================
+   TEXT SECTION
+   ============================================= */
+
 .textSection {
   text-align: center;
+  animation: slideInContent 1s ease-out 0.2s backwards;
+}
+
+@keyframes slideInContent {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .textSection {
     text-align: left;
+    max-width: 500px;
   }
 }
+
+/* =============================================
+   BUTTONS CONTAINER
+   ============================================= */
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .buttons {
     justify-content: flex-start;
   }
+}
+
+/* Button entrance animations */
+.buttons > :global(*) {
+  animation: buttonSlideUp 0.6s ease-out backwards;
+}
+
+.buttons > :global(*):nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.buttons > :global(*):nth-child(2) {
+  animation-delay: 0.65s;
+}
+
+@keyframes buttonSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================================
+   HERO-SPECIFIC BUTTON OVERRIDES
+   ============================================= */
+
+/* About Me button - white with primary text */
+.buttons :global(.button--secondary) {
+  background: rgba(255, 255, 255, 0.98);
+  color: #4f46e5;
+  border: none;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.buttons :global(.button--secondary):hover {
+  background: #ffffff;
+  color: #4338ca;
+  transform: translateY(-3px);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* View Projects button - transparent with border */
+.buttons :global(.button--outline) {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: white;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.buttons :global(.button--outline):hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 1);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark theme button adjustments */
+:global([data-theme='dark']) .buttons :global(.button--secondary) {
+  background: rgba(255, 255, 255, 0.95);
+  color: #4f46e5;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(139, 92, 246, 0.15);
+}
+
+:global([data-theme='dark']) .buttons :global(.button--secondary):hover {
+  background: #ffffff;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.5),
+    0 0 50px rgba(139, 92, 246, 0.25);
+}
+
+:global([data-theme='dark']) .buttons :global(.button--outline) {
+  background: rgba(129, 140, 248, 0.15);
+  border: 2px solid rgba(167, 139, 250, 0.8);
+  color: #ffffff !important;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.3),
+    0 0 25px rgba(139, 92, 246, 0.2);
+}
+
+:global([data-theme='dark']) .buttons :global(.button--outline):hover {
+  background: rgba(129, 140, 248, 0.25);
+  border-color: rgba(199, 210, 254, 1);
+  color: #ffffff !important;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.4),
+    0 0 50px rgba(139, 92, 246, 0.35);
 }

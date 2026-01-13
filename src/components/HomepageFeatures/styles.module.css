@@ -1,12 +1,346 @@
+/* =============================================
+   FEATURE SECTION - Professional Design
+   ============================================= */
+
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 5rem 0;
   width: 100%;
+  position: relative;
+  
+  /* LIGHT THEME - Clean white/light gray background */
+  background: linear-gradient(180deg, 
+    #ffffff 0%, 
+    #f8fafc 50%,
+    #ffffff 100%
+  );
 }
 
+/* Top accent line */
+.features::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(79, 70, 229, 0.4) 50%, 
+    transparent 100%
+  );
+}
+
+/* DARK THEME Background Override */
+:global([data-theme='dark']) .features {
+  background: linear-gradient(180deg, 
+    #0f172a 0%, 
+    #1e293b 50%,
+    #0f172a 100%
+  );
+}
+
+:global([data-theme='dark']) .features::before {
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(129, 140, 248, 0.4) 50%, 
+    transparent 100%
+  );
+}
+
+/* =============================================
+   EMOJI STYLING
+   ============================================= */
+
 .featureEmoji {
-  font-size: 4rem;
-  display: block;
+  font-size: 4.5rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
+  animation: float 4s ease-in-out infinite;
+}
+
+.featureEmoji:hover {
+  transform: scale(1.15) rotate(8deg);
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Stagger animation delays for each emoji */
+.features :global(.col):nth-child(1) .featureEmoji {
+  animation-delay: 0s;
+}
+
+.features :global(.col):nth-child(2) .featureEmoji {
+  animation-delay: 0.6s;
+}
+
+.features :global(.col):nth-child(3) .featureEmoji {
+  animation-delay: 1.2s;
+}
+
+/* =============================================
+   FEATURE CARD CONTAINER
+   ============================================= */
+
+.features :global(.col) {
+  padding: 1.5rem;
+  animation: slideUp 0.8s ease-out backwards;
+}
+
+.features :global(.col):nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.features :global(.col):nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.features :global(.col):nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================================
+   FEATURE CARDS - LIGHT THEME (DEFAULT)
+   ============================================= */
+
+.features :global(.col) > div {
+  height: 100%;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  
+  /* LIGHT THEME Card Styling */
+  background: #ffffff;
+  border: 1px solid rgba(79, 70, 229, 0.12);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.08),
+    0 2px 4px -1px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(79, 70, 229, 0.05);
+}
+
+/* Gradient top border - reveals on hover */
+.features :global(.col) > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5 0%, #8b5cf6 50%, #06b6d4 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animated gradient border ring */
+.features :global(.col) > div::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  padding: 2px;
+  background: linear-gradient(135deg, 
+    rgba(79, 70, 229, 0.3), 
+    rgba(139, 92, 246, 0.3), 
+    rgba(6, 182, 212, 0.3)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* LIGHT THEME Hover States */
+.features :global(.col) > div:hover::before {
+  transform: scaleX(1);
+}
+
+.features :global(.col) > div:hover::after {
+  opacity: 1;
+}
+
+.features :global(.col) > div:hover {
+  transform: translateY(-12px) scale(1.02);
+  background: #ffffff;
+  border-color: rgba(79, 70, 229, 0.25);
+  box-shadow: 
+    0 25px 50px -12px rgba(79, 70, 229, 0.2),
+    0 12px 24px -8px rgba(79, 70, 229, 0.12),
+    0 0 0 1px rgba(79, 70, 229, 0.1);
+}
+
+/* =============================================
+   FEATURE CARDS - DARK THEME
+   ============================================= */
+
+:global([data-theme='dark']) .features :global(.col) > div {
+  background: linear-gradient(145deg, 
+    rgba(30, 41, 59, 0.9) 0%, 
+    rgba(15, 23, 42, 0.95) 100%
+  );
+  border: 1px solid rgba(129, 140, 248, 0.2);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.4),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(129, 140, 248, 0.05);
+}
+
+:global([data-theme='dark']) .features :global(.col) > div::after {
+  background: linear-gradient(135deg, 
+    rgba(129, 140, 248, 0.4), 
+    rgba(167, 139, 250, 0.4), 
+    rgba(34, 211, 238, 0.4)
+  );
+}
+
+:global([data-theme='dark']) .features :global(.col) > div:hover {
+  background: linear-gradient(145deg, 
+    rgba(30, 41, 59, 1) 0%, 
+    rgba(15, 23, 42, 1) 100%
+  );
+  border-color: rgba(129, 140, 248, 0.4);
+  box-shadow: 
+    0 25px 50px -12px rgba(129, 140, 248, 0.25),
+    0 12px 24px -8px rgba(0, 0, 0, 0.5),
+    0 0 60px rgba(129, 140, 248, 0.1);
+}
+
+/* =============================================
+   FEATURE TITLES
+   ============================================= */
+
+.features h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+  
+  /* LIGHT THEME - Gradient text */
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.features :global(.col) > div:hover h3 {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* DARK THEME Titles */
+:global([data-theme='dark']) .features h3 {
+  background: linear-gradient(135deg, #a5b4fc 0%, #c7d2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+:global([data-theme='dark']) .features :global(.col) > div:hover h3 {
+  background: linear-gradient(135deg, #c7d2fe 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* =============================================
+   FEATURE DESCRIPTIONS
+   ============================================= */
+
+.features p {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+  transition: color 0.3s ease;
+  
+  /* LIGHT THEME */
+  color: #475569;
+}
+
+.features :global(.col) > div:hover p {
+  color: #1e293b;
+}
+
+/* DARK THEME Descriptions */
+:global([data-theme='dark']) .features p {
+  color: rgba(203, 213, 225, 0.9);
+}
+
+:global([data-theme='dark']) .features :global(.col) > div:hover p {
+  color: rgba(241, 245, 249, 1);
+}
+
+/* =============================================
+   RESPONSIVE DESIGN
+   ============================================= */
+
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 4rem 0;
+  }
+  
+  .features :global(.col) {
+    margin-bottom: 2rem;
+  }
+  
+  .featureEmoji {
+    font-size: 3.5rem;
+  }
+  
+  .features h3 {
+    font-size: 1.35rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .features {
+    padding: 3rem 0;
+  }
+  
+  .features :global(.col) > div {
+    padding: 2rem 1.5rem;
+    border-radius: 1.25rem;
+  }
+  
+  .featureEmoji {
+    font-size: 3rem;
+  }
+  
+  .features h3 {
+    font-size: 1.25rem;
+  }
+  
+  .features p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
 }
