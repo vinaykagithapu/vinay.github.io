@@ -6,9 +6,13 @@ description: "An introduction to MLOps - bridging the gap between Machine Learni
 
 # Getting Started with MLOps
 
-MLOps (Machine Learning Operations) is a set of practices that combines Machine Learning, DevOps, and Data Engineering to deploy and maintain ML systems in production reliably and efficiently.
+Welcome to the **MLOps Fundamentals** series! In this tutorial, we'll take you from understanding what MLOps is to building production-ready ML systems.
+
+---
 
 ## What is MLOps?
+
+**MLOps (Machine Learning Operations)** is a set of practices that combines Machine Learning, DevOps, and Data Engineering to deploy and maintain ML systems in production reliably and efficiently.
 
 MLOps bridges the gap between ML model development and operations, enabling:
 
@@ -17,6 +21,12 @@ MLOps bridges the gap between ML model development and operations, enabling:
 - **Automated training** pipelines
 - **Model monitoring** and drift detection
 - **Scalable inference** infrastructure
+
+:::info Definition
+**MLOps** = Machine Learning + DevOps + Data Engineering
+:::
+
+Think of MLOps as the answer to the question every Data Scientist eventually asks: *"My model works great in Jupyter — how do I get it to production?"*
 
 ## Key Components
 
@@ -35,11 +45,11 @@ Deploying models for inference with proper scaling and monitoring.
 ### 5. Monitoring
 Tracking model performance, data drift, and system health.
 
-## Coming Soon
+## What's Next?
 
-Stay tuned for detailed tutorials on:
-- Setting up ML pipelines with Kubeflow
-- LLM inference with vLLM and TensorRT-LLM
-- Model serving on Kubernetes
-- Experiment tracking with MLflow
+Now that you understand what MLOps is and why it matters, let's explore the human side: **building the right team**. In the next section, we'll introduce the key roles in an ML team and how they work together.
+
+:::info Up Next
+In the next section, we'll meet the **four pillars of an ML team** and follow **XYZShopSmart** as they build a recommendation system from scratch.
+:::
 
