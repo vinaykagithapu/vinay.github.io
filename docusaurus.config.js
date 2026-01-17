@@ -82,7 +82,9 @@ const config = {
     ({
       image: 'img/logo.svg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
       navbar: {
         title: 'Vinay Kagithapu',
