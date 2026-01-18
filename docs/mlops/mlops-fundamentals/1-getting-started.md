@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
-title: "Getting Started with MLOps"
+title: "Getting Started"
 description: "An introduction to MLOps - bridging the gap between Machine Learning and Operations to deploy and maintain production ML systems reliably"
 ---
 
-# Getting Started with MLOps
+# Getting Started
 
 Every Data Scientist eventually faces the same question: "My model works great in Jupyter — how do I get it to production?" **MLOps** is the discipline that bridges this gap.
 
