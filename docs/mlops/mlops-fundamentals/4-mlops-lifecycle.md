@@ -471,16 +471,10 @@ Here's how XYZShopSmart executed their recommendation system across all four pha
 
 ## What's Next?
 
-Now that we understand the complete MLOps lifecycle, it's time to get hands-on! In the upcoming sections, we'll build each component of XYZShopSmart's ML platform:
+Now that we understand the complete MLOps lifecycle, it's time to explore the **continuous practices** that keep this lifecycle running smoothly. In the next section, we'll dive into CI, CD, CT, and CM — the automation backbone of production ML systems.
 
-| Section | Topic | What You'll Build |
-|---------|-------|-------------------|
-| **Data Pipelines** | ETL for ML | Airflow DAGs for feature extraction |
-| **Feature Store** | Feast Setup | Online/offline feature serving |
-| **Experiment Tracking** | MLflow Deep Dive | Reproducible experiments |
-| **Model Deployment** | Kubernetes + Seldon | Production inference API |
-| **Monitoring** | Observability Stack | Drift detection and alerting |
+You'll learn how Continuous Integration ensures code, data, and model changes work together. How Continuous Deployment automates safe model releases. How Continuous Training keeps models fresh as data evolves. And how Continuous Monitoring detects issues before they impact users.
 
 :::info Up Next
-In the next section, we'll start building **XYZShopSmart's data pipelines** — the foundation of Phase 1 (Data Exploration) in action.
+In the next section, we'll explore **CI, CD, CT, and CM in MLOps** — the continuous practices that automate and operationalize everything we've learned about the MLOps lifecycle.
 :::
