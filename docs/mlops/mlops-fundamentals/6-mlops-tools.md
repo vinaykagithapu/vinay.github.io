@@ -313,8 +313,8 @@ Start with the tools that address your biggest pain points:
 
 ## What's Next
 
-With a solid understanding of the MLOps toolchain, you're ready to dive deeper into implementation. The next sections will walk through setting up each tool category with hands-on examples.
+With a solid understanding of the MLOps toolchain, you're ready to see how these tools fit together in a complete architecture. The next section provides a high-level view of how data pipelines, ML workflows, and production monitoring connect.
 
 :::info Up Next
-In the next section, we'll set up a complete version control workflow using Git and DVC, including best practices for tracking experiments.
+We'll explore the **MLOps High-Level Architecture** — a complete blueprint showing how data flows from problem statement through collection, modeling, deployment, and back via continuous monitoring and retraining.
 :::
