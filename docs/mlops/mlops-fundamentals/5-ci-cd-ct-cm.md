@@ -182,8 +182,8 @@ A complete cycle at XYZShopSmart:
 
 ## What's Next
 
-With a solid understanding of CI, CD, CT, and CM, you're ready to implement these practices. In the upcoming sections, we'll build each component using GitHub Actions, Kubernetes, Airflow, and observability tools.
+With a solid understanding of CI, CD, CT, and CM, you're ready to explore the tools that make these practices possible. The next section covers the essential MLOps toolchain.
 
 :::info Up Next
-In the next section, we'll start building production CI pipelines using GitHub Actions, complete with data versioning and automated ML testing.
+In the next section, we'll explore the essential tools for MLOps—from version control and CI/CD to experiment tracking, monitoring, and workflow orchestration.
 :::
