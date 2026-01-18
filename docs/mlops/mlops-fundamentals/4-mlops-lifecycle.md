@@ -24,17 +24,17 @@ The MLOps lifecycle consists of four interconnected phases that form a continuou
 flowchart TB
     DC[1. Data Exploration]
     MD[2. Model Development]
-    TD[3. Testing & Deployment]
+    TDP[3. Testing & Deployment]
     OP[4. Operations]
     
     DC --> MD
-    MD --> TD
-    TD --> OP
-    OP --> DC
+    MD --> TDP
+    TDP --> OP
+    OP -.Feedback.-> DC
     
     style DC fill:#4A90A4,stroke:#2C5F6E,color:#fff
     style MD fill:#5BA88F,stroke:#3D7A62,color:#fff
-    style TD fill:#7B68A6,stroke:#4E4272,color:#fff
+    style TDP fill:#7B68A6,stroke:#4E4272,color:#fff
     style OP fill:#E07B53,stroke:#A65535,color:#fff
 ```
 
@@ -73,10 +73,12 @@ The foundation of any successful ML project. This phase ensures data readiness f
 ```mermaid
 flowchart LR
     subgraph sources[Data Sources]
+        direction TB
         O[Orders DB]
         C[Clickstream]
         P[Product Catalog]
         U[User Profiles]
+        O ~~~ C ~~~ P ~~~ U
     end
     
     subgraph exploration[Data Exploration]
@@ -170,18 +172,21 @@ flowchart LR
     subgraph explore[Explore]
         E1[Research Algorithms]
         E2[Prototype Solutions]
+        E1 ~~~ E2
     end
     
     subgraph train[Train]
         T1[Hyperparameter Tuning]
         T2[Cross-Validation]
         T3[Experiment Tracking]
+        T1 ~~~ T2 ~~~ T3
     end
     
     subgraph evaluate[Evaluate]
         V1[Offline Metrics]
         V2[Business Validation]
         V3[Model Selection]
+        V1 ~~~ V2 ~~~ V3
     end
     
     explore --> train --> evaluate
@@ -194,31 +199,6 @@ flowchart LR
     style V1 fill:#7B68A6,stroke:#4E4272,color:#fff
     style V2 fill:#7B68A6,stroke:#4E4272,color:#fff
     style V3 fill:#7B68A6,stroke:#4E4272,color:#fff
-```
-
-### Experiment Tracking Example
-
-```python
-import mlflow
-
-with mlflow.start_run(run_name="collaborative_filtering_v1"):
-    # Log parameters
-    mlflow.log_param("algorithm", "ALS")
-    mlflow.log_param("factors", 100)
-    mlflow.log_param("regularization", 0.01)
-    mlflow.log_param("iterations", 20)
-    
-    # Train model
-    model = train_als_model(data, factors=100, reg=0.01, iters=20)
-    
-    # Log metrics
-    mlflow.log_metric("rmse", 0.82)
-    mlflow.log_metric("precision_at_10", 0.15)
-    mlflow.log_metric("recall_at_10", 0.08)
-    mlflow.log_metric("ndcg", 0.12)
-    
-    # Log model
-    mlflow.spark.log_model(model, "recommendation_model")
 ```
 
 ---
@@ -285,19 +265,24 @@ flowchart LR
     subgraph build[Build]
         B1[Containerize]
         B2[Push to Registry]
+        B1 ~~~ B2
     end
     
     subgraph test[Test]
         T1[Unit Tests]
         T2[Integration Tests]
         T3[Performance Tests]
+        T1 ~~~ T2 ~~~ T3
     end
     
     subgraph deploy[Deploy]
+        direction LR
         D1[Staging]
         D2[Canary 5%]
+        D1 ~~~ D2
         D3[Canary 25%]
         D4[Full Rollout]
+        D3 ~~~ D4
     end
     
     build --> test --> deploy
@@ -406,8 +391,8 @@ flowchart TB
 Putting it all together — here's the full lifecycle with XYZShopSmart's implementation:
 
 ```mermaid
-flowchart TB
-    subgraph phase1[Phase 1: Data Exploration - 30-40%]
+flowchart LR
+    subgraph phase1[P1: Data Exploration]
         P1A[Collect Data]
         P1B[Curate Data]
         P1C[Transform Data]
@@ -415,21 +400,22 @@ flowchart TB
         P1A --> P1B --> P1C --> P1D
     end
     
-    subgraph phase2[Phase 2: Model Development - 20-30%]
+    subgraph phase2[P2: Model Development]
         P2A[Explore Models]
         P2B[Train Models]
         P2C[Evaluate Models]
         P2A --> P2B --> P2C
     end
     
-    subgraph phase3[Phase 3: Testing & Deployment - 15-20%]
+    subgraph phase3[P3: Testing & Deployment]
         P3A[Build Model]
         P3B[Test Model]
         P3C[Deploy Model]
         P3A --> P3B --> P3C
     end
     
-    subgraph phase4[Phase 4: Operations - 15-25%]
+    subgraph phase4[P4: Operations]
+        direction TB
         P4A[Release]
         P4B[Monitor]
         P4C[Retrain]
