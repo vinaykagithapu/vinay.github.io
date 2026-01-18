@@ -6,7 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import profilePhoto from './dp2.png';
+import profilePhoto from './pp2.png';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
