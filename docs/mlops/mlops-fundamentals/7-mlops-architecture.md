@@ -259,8 +259,8 @@ The MLOps Engineer supports the entire architecture with specialized skills in t
 
 ## What's Next
 
-With a solid understanding of MLOps architecture, you're ready to apply these concepts in practice. The next sections will provide hands-on implementations of each architectural component.
+With a solid understanding of MLOps architecture, you're ready to dive deeper into the first major component — **Data Collection and Preparation**. This foundational phase determines the quality of everything that follows.
 
 :::info Up Next
-We'll dive into practical implementations, starting with setting up a complete version control workflow using Git and DVC for tracking code, data, and models together.
+We'll explore **Data Collection and Preparation** — understanding where organizational data lives, how ETL pipelines consolidate it, and why Data Lakes have become the standard storage solution for ML systems.
 :::
