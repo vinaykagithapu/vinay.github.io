@@ -197,10 +197,10 @@ This architecture supports both their recommendation system training and ad-hoc 
 
 ---
 
-## What's Next?
+## What's Next
 
-With data collection, ETL, and storage foundations in place, you're ready to build production ML data pipelines. The concepts covered in this section — understanding data sources, implementing ETL, and leveraging Data Lakes — form the backbone of every successful ML system.
+With data stored in the Data Lake, the next critical step is ensuring data quality and transforming raw data into formats suitable for ML models. Raw data in mixed formats needs cleaning, validation, and standardization before it can power effective machine learning.
 
 :::info Up Next
-Continue exploring MLOps topics to learn about **Model Development**, **Training Pipelines**, and **Feature Stores** that build on top of your data infrastructure.
+We'll explore **Data Cleaning and Transformation** — understanding data quality analysis, improvement strategies, and the tools that transform raw data into ML-ready datasets.
 :::
