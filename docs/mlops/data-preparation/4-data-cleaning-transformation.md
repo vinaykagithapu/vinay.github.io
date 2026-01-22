@@ -320,8 +320,8 @@ Most teams use both approaches—Pandas for exploration and prototyping, Spark o
 
 ## What's Next
 
-With data collection, ETL, storage in Data Lakes, and transformation foundations complete, you've covered the core data preparation pipeline. The next step is understanding how to engineer features that help models learn effectively—transforming clean data into meaningful inputs for ML algorithms.
+So far, we've focused on batch data—processing data at scheduled intervals. But what happens when XYZShopSmart needs to react to user behavior in real-time? The next section explores streaming datasets—how to capture and process continuous event flows using Apache Kafka and Apache Flink.
 
 :::info Up Next
-Continue exploring MLOps topics to learn about **Feature Engineering** — the art of creating meaningful input variables from transformed data that help ML models discover patterns and make accurate predictions.
+We'll explore **Streaming Datasets**—understanding how Apache Kafka and Apache Flink enable real-time data pipelines that complement batch processing for ML systems.
 :::
