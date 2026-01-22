@@ -97,12 +97,14 @@ flowchart LR
     subgraph Section1["1: Small/Medium Data"]
         direction LR
         PANDAS[Pandas]
+        POLARS[Polars]
         DBT[dbt]
     end
     
     subgraph Section2["2: Large Scale Data"]
         direction LR
         SPARK[Apache Spark]
+        DASK[Dask]
         GLUE[AWS Glue]
         TALEND[Talend]
     end
@@ -121,11 +123,88 @@ flowchart LR
 
 ## Small to Medium Data Processing
 
-For datasets that fit in memory on a single machine, these tools offer simplicity and rapid development.
+For datasets that fit in memory on a single machine, efficiency and simplicity are key. Tools like Pandas and Polars offer rapid development cycles ideal for tasks like cleaning sales data for retail insights or preparing survey results for research projects.
+
+### Pandas vs Polars
+
+Both are powerful Python libraries for data manipulation and transformation—ideal for small to medium datasets.
+
+| Aspect | Pandas | Polars |
+|--------|--------|--------|
+| **Strength** | Flexibility and versatility | Optimized for performance and efficiency |
+| **Best For** | Cleaning messy customer feedback data for insights | Lightning-fast computation for real-time data |
+| **Memory** | Higher memory usage | Memory-efficient with lazy evaluation |
 
 ### Pandas
 
 A versatile Python library for data manipulation and transformation. **DataFrame operations** handle filtering, joining, and aggregating data with minimal code. **Memory efficiency** techniques like chunked reading enable processing of moderately large files.
+
+#### Key Functions in Pandas
+
+**Handling Missing Values**: Use `dropna()` to remove rows with missing values or `fillna()` to replace them with defaults.
+
+```python
+df.dropna(inplace=True)  # Remove rows with missing values
+df.fillna(0, inplace=True)  # Replace missing values with 0
+```
+
+**Removing Duplicates**: Use `drop_duplicates()` to eliminate duplicate records that would skew model training.
+
+```python
+df.drop_duplicates(inplace=True)  # Drop duplicate rows
+```
+
+**Data Type Conversion**: Use `astype()` to convert columns to appropriate types.
+
+```python
+df['age'] = df['age'].astype(int)  # Converting string age to int
+```
+
+**Filtering and Sorting**: Use `filter()` to select specific columns and `sort_values()` to order data.
+
+```python
+df_filtered = df.filter(['name', 'age'])
+df_sorted = df.sort_values(by='age')
+```
+
+**Aggregation**: Use `groupby()` and `agg()` to summarize data by categories.
+
+```python
+df_grouped = df.groupby('region').agg({'sales': 'sum'})
+```
+
+**Merging and Joining**: Use `merge()` or `join()` to combine datasets.
+
+```python
+df_merged = pd.merge(df1, df2, on='id')
+```
+
+#### Pandas in Action: XYZShopSmart Workflow
+
+```mermaid
+flowchart LR
+    subgraph DataCleaning["Data Cleaning"]
+        direction TB
+        RAW[Raw Data]
+        MISSING[Remove Missing<br/>df.dropna]
+        CONVERT[Convert Data Types<br/>pd.to_datetime]
+    end
+    
+    subgraph DataTransform["Data Transformation"]
+        GROUP[Group by Region<br/>df.groupby]
+        AGG[Aggregate Sales<br/>.agg]
+        SUMMARY[Sales Summary]
+    end
+    
+    RAW --> MISSING
+    MISSING --> CONVERT
+    GROUP --> AGG
+    AGG --> SUMMARY
+    DataCleaning ---> DataTransform
+    
+    style DataCleaning fill:#4A90A4,stroke:#2C5F6E,color:#fff
+    style DataTransform fill:#5BA88F,stroke:#3D7A62,color:#fff
+```
 
 ### dbt (data build tool)
 
@@ -144,9 +223,33 @@ A development framework for transforming data inside data warehouses. **SQL-base
 
 When data exceeds single-machine capacity, distributed computing frameworks distribute work across clusters.
 
-### Apache Spark
+### Why Distributed Processing?
 
-Distributed computing for large-scale data processing and transformation. **Resilient Distributed Datasets (RDDs)** and **DataFrames** enable parallel processing across hundreds of nodes. **PySpark** provides a Python API familiar to data scientists.
+Consider a single 50MB file—easy to process on any machine. But in real-time production environments, teams deal with thousands of files totaling 500GB or more. One server simply cannot handle this volume efficiently. This is where **distributed data processing** solves the problem.
+
+### Apache Spark (PySpark)
+
+Apache Spark leverages distributed computing for large-scale data processing and transformation. It excels at handling datasets that would overwhelm single-machine tools.
+
+**Key Capabilities**:
+- **Parallel task execution** reduces processing time by distributing work across cluster nodes
+- **Handles data transformation efficiently** through optimized execution plans
+- **Processes millions of events per second** for real-time insights
+
+**Why Apache Spark Excels**:
+
+| Capability | Benefit |
+|-----------|---------|
+| **Distributed Processing** | Leverages cluster computing for parallel data processing |
+| **Fault Tolerance** | Recovers automatically from node failures using Resilient Distributed Datasets (RDDs) |
+| **In-Memory Computation** | Processes data in memory to reduce disk I/O bottlenecks |
+| **Unified API** | Supports multiple programming languages and workloads seamlessly |
+
+**Resilient Distributed Datasets (RDDs)** and **DataFrames** enable parallel processing across hundreds of nodes. **PySpark** provides a Python API familiar to data scientists, making Spark accessible without learning Scala or Java.
+
+### Dask
+
+A flexible parallel computing library for Python that scales Pandas-like workflows. **Lazy evaluation** builds computation graphs before execution. **Familiar API** mirrors Pandas, reducing the learning curve for Python developers.
 
 ### AWS Glue
 
@@ -207,7 +310,9 @@ Most teams use both approaches—Pandas for exploration and prototyping, Spark o
 
 **Quality improvement strategies are systematic, not ad-hoc.** Accuracy checks, deduplication, standardization, missing value handling, and format optimization form a complete toolkit.
 
-**Tool selection depends on data scale.** Pandas and dbt serve small to medium datasets; Spark, AWS Glue, and Talend handle large-scale distributed processing.
+**Tool selection depends on data scale.** Pandas, Polars, and dbt serve small to medium datasets; Spark, Dask, AWS Glue, and Talend handle large-scale distributed processing.
+
+**Apache Spark solves the distributed processing problem.** When single-machine tools cannot handle data volume, Spark's parallel execution, fault tolerance, and in-memory computation provide the necessary scale.
 
 **Most organizations need both approaches.** Small-scale tools for exploration and prototyping, large-scale tools for production pipelines.
 
