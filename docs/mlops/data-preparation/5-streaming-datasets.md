@@ -18,9 +18,9 @@ Batch processing handles data at rest; stream processing handles data in motion.
 
 ## XYZShopSmart: The Real-Time Challenge
 
-XYZShopSmart's recommendation system worked well with nightly batch updates, but Maya noticed a problem. When a customer purchased a laptop at 10 AM, they continued seeing laptop recommendations until the next morning's batch refresh. Customers complained about irrelevant suggestions, and the team suspected they were missing cross-sell opportunities for accessories.
+XYZShopSmart's recommendation system worked well with nightly batch updates, but Sonu noticed a problem. When a customer purchased a laptop at 10 AM, they continued seeing laptop recommendations until the next morning's batch refresh. Customers complained about irrelevant suggestions, and the team suspected they were missing cross-sell opportunities for accessories.
 
-The data engineering team analyzed the issue. Their ETL pipelines processed clickstream and purchase data once daily—extracting from web analytics, transforming in Spark, and loading to the Data Lake. By the time Maya's model retrained, customer intent had already shifted. They needed a streaming architecture to capture and process user behavior in real-time, feeding fresh signals to the recommendation engine within seconds of each interaction.
+The data engineering team analyzed the issue. Their ETL pipelines processed clickstream and purchase data once daily—extracting from web analytics, transforming in Spark, and loading to the Data Lake. By the time Sonu's model retrained, customer intent had already shifted. They needed a streaming architecture to capture and process user behavior in real-time, feeding fresh signals to the recommendation engine within seconds of each interaction.
 
 ---
 
@@ -98,7 +98,7 @@ XYZShopSmart configured Kafka to handle their real-time event flow:
 | `user-purchases` | Order Database | Completed transactions, cart additions |
 | `user-sessions` | Mobile App | App opens, session duration, navigation paths |
 
-Multiple consumer groups process these topics independently. The recommendation service consumes from all three topics to update user preferences. The analytics pipeline aggregates events for real-time dashboards. Kafka retains events for 7 days, enabling Maya to replay data when debugging model issues.
+Multiple consumer groups process these topics independently. The recommendation service consumes from all three topics to update user preferences. The analytics pipeline aggregates events for real-time dashboards. Kafka retains events for 7 days, enabling Sonu to replay data when debugging model issues.
 
 ---
 
@@ -221,7 +221,7 @@ Most ML systems use **hybrid architectures**. XYZShopSmart runs Spark for nightl
 
 ## What's Next
 
-With batch ETL pipelines feeding the Data Lake and streaming pipelines delivering real-time data, XYZShopSmart has robust data infrastructure. However, Maya's team discovered that traditional data warehouses struggle with the low-latency, high-frequency access patterns required for real-time ML inference. The next step is understanding Feature Stores—a specialized approach to storing and serving features that bridges the gap between data infrastructure and ML model serving.
+With batch ETL pipelines feeding the Data Lake and streaming pipelines delivering real-time data, XYZShopSmart has robust data infrastructure. However, Sonu's team discovered that traditional data warehouses struggle with the low-latency, high-frequency access patterns required for real-time ML inference. The next step is understanding Feature Stores—a specialized approach to storing and serving features that bridges the gap between data infrastructure and ML model serving.
 
 :::info Up Next
 We'll explore **Feature Stores**—understanding how they solve data freshness, low-latency serving, consistency, and scalability challenges that traditional data systems cannot address efficiently.

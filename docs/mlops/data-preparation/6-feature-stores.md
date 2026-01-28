@@ -18,7 +18,7 @@ A Feature Store is not a tool—it's a different approach to storing and serving
 
 ## XYZShopSmart: The Recommendation Latency Problem
 
-XYZShopSmart's recommendation system needed to serve personalized suggestions to millions of users. Maya's team had a working model, but the infrastructure struggled. Their data warehouse updated features daily through batch processing, meaning the "user purchase frequency" feature was often stale—if a customer bought three items today, the warehouse wouldn't reflect this until tomorrow's batch run. When users browsed the site, the ML model retrieved features from the warehouse, but complex queries caused high latency—sometimes taking seconds instead of the milliseconds needed for a responsive experience.
+XYZShopSmart's recommendation system needed to serve personalized suggestions to millions of users. Sonu's team had a working model, but the infrastructure struggled. Their data warehouse updated features daily through batch processing, meaning the "user purchase frequency" feature was often stale—if a customer bought three items today, the warehouse wouldn't reflect this until tomorrow's batch run. When users browsed the site, the ML model retrieved features from the warehouse, but complex queries caused high latency—sometimes taking seconds instead of the milliseconds needed for a responsive experience.
 
 The team needed a solution that could provide fresh, up-to-date features with low-latency access while maintaining consistency between training and serving environments.
 
@@ -95,7 +95,7 @@ A common source of model degradation is training-serving skew—when features ar
 | **Model Accuracy** | Inconsistent features cause prediction errors | Consistent features maintain model performance |
 | **XYZShopSmart Example** | Training calculates "purchase frequency" one way, serving another | Same calculation logic in both environments |
 
-Varying calculations for "user purchase frequency" during training versus serving harm performance. Feature Stores prevent this by providing a single source of truth for feature definitions and computations, ensuring Maya's model sees identical feature values in both environments.
+Varying calculations for "user purchase frequency" during training versus serving harm performance. Feature Stores prevent this by providing a single source of truth for feature definitions and computations, ensuring Sonu's model sees identical feature values in both environments.
 
 ---
 
@@ -109,7 +109,7 @@ Data warehouses lack native support for complex feature engineering and provide 
 | **Real-Time Processing** | No support for on-the-fly transformations | Transforms data as it streams in |
 | **XYZShopSmart Example** | Normalization code duplicated across projects | One reusable pipeline for all models |
 
-Normalization or encoding for "user purchase frequency" is streamlined through Feature Store pipelines, providing properly formatted data to Maya's ML model. Feature Stores centralize transformation logic, making it reusable across multiple models and ensuring consistency.
+Normalization or encoding for "user purchase frequency" is streamlined through Feature Store pipelines, providing properly formatted data to Sonu's ML model. Feature Stores centralize transformation logic, making it reusable across multiple models and ensuring consistency.
 
 ---
 
@@ -176,7 +176,7 @@ Feature Stores typically have two components:
 
 XYZShopSmart implemented a Feature Store to address their recommendation system challenges:
 
-1. **Feature Definition**: Maya's team defines features like "user purchase frequency" with transformation logic stored centrally
+1. **Feature Definition**: Sonu's team defines features like "user purchase frequency" with transformation logic stored centrally
 2. **Batch Ingestion**: Historical purchase data flows from Spark jobs into the offline store for training
 3. **Streaming Ingestion**: Real-time purchase events flow from Flink into the online store
 4. **Training Access**: Model training jobs read historical features from the offline store

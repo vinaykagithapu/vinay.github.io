@@ -74,7 +74,7 @@ Data Scientists transform business requirements into ML solutions using domain e
 
 ### At XYZShopSmart
 
-Maya and the team learned key constraints: recommendations must load in under 100ms for 5 million users and 500,000 products. Conversion rate mattered more than click-through.
+Sonu and the team learned key constraints: recommendations must load in under 100ms for 5 million users and 500,000 products. Conversion rate mattered more than click-through.
 
 They assessed available data: user purchase history with 50 million transactions over three years, product catalog with 500,000 items, browsing behavior capturing clicks and views, and user profiles with demographics and preferences.
 

@@ -18,7 +18,7 @@ Data quality issues discovered during model training are expensive to fix. Inves
 
 ## XYZShopSmart: The Format Problem
 
-After setting up their data lake, XYZShopSmart's data engineering team faced a challenge. User behavior data arrived as JSON from the web app, purchase records came as CSV exports from the legacy system, and product images were stored as PNGs. Maya couldn't train her recommendation model until all this data spoke the same language. The team needed a systematic approach to clean, validate, and transform everything into a unified format.
+After setting up their data lake, XYZShopSmart's data engineering team faced a challenge. User behavior data arrived as JSON from the web app, purchase records came as CSV exports from the legacy system, and product images were stored as PNGs. Sonu couldn't train her recommendation model until all this data spoke the same language. The team needed a systematic approach to clean, validate, and transform everything into a unified format.
 
 ---
 

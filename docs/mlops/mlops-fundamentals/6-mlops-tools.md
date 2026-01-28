@@ -34,7 +34,7 @@ Version control forms the foundation of any MLOps workflow. Unlike traditional s
 
 ### How XYZShopSmart Uses Version Control
 
-Maya commits her feature engineering code to Git. DVC tracks the training dataset version alongside the code, so any team member can reproduce her exact experiment by checking out both the code commit and the corresponding data version.
+Sonu commits her feature engineering code to Git. DVC tracks the training dataset version alongside the code, so any team member can reproduce her exact experiment by checking out both the code commit and the corresponding data version.
 
 ---
 
@@ -98,7 +98,7 @@ Experiment tracking tools capture the metadata needed to reproduce and compare M
 
 ### How XYZShopSmart Uses Experiment Tracking
 
-Maya logs every training run to MLflow:
+Sonu logs every training run to MLflow:
 
 1. Parameters, metrics, and artifacts are captured automatically
 2. The model registry tracks which version is in staging vs. production

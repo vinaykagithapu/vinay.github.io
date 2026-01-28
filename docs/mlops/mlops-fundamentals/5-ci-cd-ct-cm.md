@@ -36,7 +36,7 @@ Continuous Integration ensures that code changes, data updates, and model modifi
 
 ### How CI Works at XYZShopSmart
 
-When Maya submits her feature engineering update:
+When Sonu submits her feature engineering update:
 
 1. The CI pipeline triggers automatically on pull request
 2. Data versioning tools verify the training dataset version is tracked
@@ -61,7 +61,7 @@ Continuous Deployment automates the release of machine learning models to produc
 
 ### How CD Works at XYZShopSmart
 
-When Maya's feature update passes CI:
+When Sonu's feature update passes CI:
 
 1. The CD pipeline builds a Docker container with the updated model
 2. Security scans verify the container has no vulnerabilities
@@ -150,7 +150,7 @@ flowchart LR
 
 A complete cycle at XYZShopSmart:
 
-1. Maya submits an improved feature; CI runs tests and approves the merge
+1. Sonu submits an improved feature; CI runs tests and approves the merge
 2. CD deploys via canary release, gradually expanding to 100% of users
 3. CM monitors all metric layers throughout the week, detecting gradual decline
 4. CT triggers scheduled retraining; the new model outperforms production
