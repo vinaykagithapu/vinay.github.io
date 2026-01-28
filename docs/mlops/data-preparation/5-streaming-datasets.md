@@ -221,8 +221,8 @@ Most ML systems use **hybrid architectures**. XYZShopSmart runs Spark for nightl
 
 ## What's Next
 
-With batch ETL pipelines feeding the Data Lake and streaming pipelines delivering real-time features, XYZShopSmart has a complete data foundation. The next step is understanding how to engineer meaningful features from this data—transforming raw events and records into inputs that help Maya's recommendation model learn patterns and make accurate predictions.
+With batch ETL pipelines feeding the Data Lake and streaming pipelines delivering real-time data, XYZShopSmart has robust data infrastructure. However, Maya's team discovered that traditional data warehouses struggle with the low-latency, high-frequency access patterns required for real-time ML inference. The next step is understanding Feature Stores—a specialized approach to storing and serving features that bridges the gap between data infrastructure and ML model serving.
 
 :::info Up Next
-We'll explore **Feature Engineering**—the art of creating meaningful input variables from both batch and streaming data that help ML models discover patterns and make accurate predictions.
+We'll explore **Feature Stores**—understanding how they solve data freshness, low-latency serving, consistency, and scalability challenges that traditional data systems cannot address efficiently.
 :::
