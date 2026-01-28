@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">CI, CD, CT, and CM in MLOps | Vinay Kagithapu</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://vinaykagithapu.github.io/img/logo.svg"><meta data-rh="true" name="twitter:image" content="https://vinaykagithapu.github.io/img/logo.svg"><meta data-rh="true" property="og:url" content="https://vinaykagithapu.github.io/docs/mlops/mlops-fundamentals/ci-cd-ct-cm/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="CI, CD, CT, and CM in MLOps | Vinay Kagithapu"><meta data-rh="true" name="description" content="Understanding Continuous Integration, Continuous Deployment, Continuous Training, and Continuous Monitoring in Machine Learning Operations"><meta data-rh="true" property="og:description" content="Understanding Continuous Integration, Continuous Deployment, Continuous Training, and Continuous Monitoring in Machine Learning Operations"><link data-rh="true" rel="icon" href="/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://vinaykagithapu.github.io/docs/mlops/mlops-fundamentals/ci-cd-ct-cm/"><link data-rh="true" rel="alternate" href="https://vinaykagithapu.github.io/docs/mlops/mlops-fundamentals/ci-cd-ct-cm/" hreflang="en"><link data-rh="true" rel="alternate" href="https://vinaykagithapu.github.io/docs/mlops/mlops-fundamentals/ci-cd-ct-cm/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"MLOps","item":"https://vinaykagithapu.github.io/docs/category/mlops"},{"@type":"ListItem","position":2,"name":"MLOps Fundamentals","item":"https://vinaykagithapu.github.io/docs/category/mlops-fundamentals"},{"@type":"ListItem","position":3,"name":"CI, CD, CT, and CM in MLOps","item":"https://vinaykagithapu.github.io/docs/mlops/mlops-fundamentals/ci-cd-ct-cm"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Vinay Kagithapu RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Vinay Kagithapu Atom Feed"><link rel="stylesheet" href="/assets/css/styles.bd246620.css">
-<script src="/assets/js/runtime~main.ca09fe1e.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.883415b1.js" defer="defer"></script>
 <script src="/assets/js/main.f079c8fb.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -27,7 +27,7 @@
 <p><strong>Automated Testing</strong> implements multiple layers: unit tests verify individual functions, integration tests confirm components work together, and validation tests ensure model quality meets thresholds.</p>
 <p><strong>Build Reproducibility</strong> ensures builds replicate consistently across environments using Docker containers. <strong>Enhanced Collaboration</strong> creates a shared checkpoint where everyone&#x27;s work is validated before merging.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-ci-works-at-xyzshopsmart">How CI Works at XYZShopSmart<a href="#how-ci-works-at-xyzshopsmart" class="hash-link" aria-label="Direct link to How CI Works at XYZShopSmart" title="Direct link to How CI Works at XYZShopSmart" translate="no">​</a></h3>
-<p>When Maya submits her feature engineering update:</p>
+<p>When Sonu submits her feature engineering update:</p>
 <ol>
 <li class="">The CI pipeline triggers automatically on pull request</li>
 <li class="">Data versioning tools verify the training dataset version is tracked</li>
@@ -44,7 +44,7 @@
 <p><strong>Deployment Strategies</strong> implement safe, incremental releases: Blue-Green maintains two environments and switches traffic instantly, Canary releases to a small percentage first, Shadow runs new models alongside production for comparison, and A/B Testing splits traffic to compare business metrics.</p>
 <p><strong>Rollback Mechanisms</strong> enable quick reversion when issues are detected, with automated triggers based on error rates or latency thresholds.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-cd-works-at-xyzshopsmart">How CD Works at XYZShopSmart<a href="#how-cd-works-at-xyzshopsmart" class="hash-link" aria-label="Direct link to How CD Works at XYZShopSmart" title="Direct link to How CD Works at XYZShopSmart" translate="no">​</a></h3>
-<p>When Maya&#x27;s feature update passes CI:</p>
+<p>When Sonu&#x27;s feature update passes CI:</p>
 <ol>
 <li class="">The CD pipeline builds a Docker container with the updated model</li>
 <li class="">Security scans verify the container has no vulnerabilities</li>
@@ -96,7 +96,7 @@
 <!-- -->
 <p>A complete cycle at XYZShopSmart:</p>
 <ol>
-<li class="">Maya submits an improved feature; CI runs tests and approves the merge</li>
+<li class="">Sonu submits an improved feature; CI runs tests and approves the merge</li>
 <li class="">CD deploys via canary release, gradually expanding to 100% of users</li>
 <li class="">CM monitors all metric layers throughout the week, detecting gradual decline</li>
 <li class="">CT triggers scheduled retraining; the new model outperforms production</li>
