@@ -210,8 +210,8 @@ XYZShopSmart implemented a Feature Store to address their recommendation system 
 
 ## What's Next
 
-With Data Lakes handling batch storage, streaming pipelines providing real-time data flow, and Feature Stores serving features to ML models, XYZShopSmart has built a complete data infrastructure for their recommendation system. The next step is understanding how to version, track, and manage this data throughout the ML lifecycle.
+With Data Lakes handling batch storage, streaming pipelines providing real-time data flow, and Feature Stores serving features to ML models, XYZShopSmart has built robust data infrastructure. However, as pipelines multiply, managing their execution—scheduling, dependencies, monitoring, and failure handling—becomes increasingly complex.
 
 :::info Up Next
-We'll explore **Data Versioning and Management**—understanding how to track data changes, maintain reproducibility, and manage datasets throughout the ML model lifecycle.
+We'll explore **Data Pipeline Orchestration**—understanding how tools like Apache Airflow and Prefect automate, schedule, and monitor complex data workflows that power ML systems.
 :::
