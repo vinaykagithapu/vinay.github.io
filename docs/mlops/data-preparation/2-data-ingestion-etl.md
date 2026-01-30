@@ -135,6 +135,7 @@ The Load phase moves transformed data into a target storage system. Two primary 
 
 ## XYZShopSmart's Complete ETL Pipeline
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
 flowchart TB
     subgraph sources[Data Sources]
@@ -171,6 +172,7 @@ flowchart TB
     style DL fill:#7B68A6,stroke:#4E4272,color:#fff
     style FS fill:#7B68A6,stroke:#4E4272,color:#fff
 ```
+</div>
 
 XYZShopSmart's pipeline operates as follows:
 

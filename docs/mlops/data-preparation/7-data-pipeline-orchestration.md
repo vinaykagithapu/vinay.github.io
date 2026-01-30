@@ -58,6 +58,8 @@ flowchart TB
         MONITOR[Monitoring]
         RETRY[Error Handling]
     end
+    SCHEDULE ~~~ DEPS
+    MONITOR ~~~ RETRY
     
     ETL --> TRANSFORM
     TRANSFORM --> LOAD

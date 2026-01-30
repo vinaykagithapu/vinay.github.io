@@ -40,6 +40,7 @@ Feature Stores solve five critical challenges that traditional data warehouses s
 
 Traditional data warehouses process data in batches—updating periodically on daily or hourly schedules. This batch processing leads to stale data and missed recent changes. For XYZShopSmart's "user purchase frequency" feature, the warehouse might miss recent purchases made that day, providing outdated values to the recommendation model and missing cross-sell opportunities.
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
 flowchart LR
     subgraph DWH["Data Warehouse Limitations"]
@@ -55,11 +56,12 @@ flowchart LR
     STREAM --> |"Real-time updates"| FRESH
     BATCH --> |"Updated daily/hourly"| STALE
     
-    DWH ~~~~~~ FS
+    DWH ~~~~ FS
     
     style DWH fill:#E07B53,stroke:#A65535,color:#fff
     style FS fill:#5BA88F,stroke:#3D7A62,color:#fff
 ```
+</div>
 
 | Challenge | Data Warehouse | Feature Store |
 |-----------|----------------|----------------|

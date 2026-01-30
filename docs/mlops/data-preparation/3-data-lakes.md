@@ -31,6 +31,7 @@ The answer was a Data Lake — a single, scalable location for all their ML data
 
 A Data Lake is a centralized repository that stores structured, semi-structured, and unstructured data at any scale. Unlike traditional databases with rigid schemas, Data Lakes accept data in its raw form and apply structure when reading (schema-on-read).
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
 flowchart TB
     subgraph sources[Data Sources]
@@ -70,6 +71,7 @@ flowchart TB
     style AN fill:#7B68A6,stroke:#4E4272,color:#fff
     style BI fill:#7B68A6,stroke:#4E4272,color:#fff
 ```
+</div>
 
 ---
 

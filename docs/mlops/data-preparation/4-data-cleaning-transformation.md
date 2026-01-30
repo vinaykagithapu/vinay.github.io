@@ -79,6 +79,7 @@ Transform raw data into usable formats for effective decision-making. This inclu
 
 Different tools serve different data scales. Choosing the right tool depends on data volume, team expertise, and infrastructure constraints.
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
 flowchart LR
     subgraph Input["Raw Data Sources"]
@@ -118,6 +119,7 @@ flowchart LR
     style Section1 fill:#7B68A6,stroke:#4E4272,color:#fff
     style Section2 fill:#E07B53,stroke:#A65535,color:#fff
 ```
+</div>
 
 ---
 
@@ -181,6 +183,7 @@ df_merged = pd.merge(df1, df2, on='id')
 
 #### Pandas in Action: XYZShopSmart Workflow
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
 flowchart LR
     subgraph DataCleaning["Data Cleaning"]
@@ -205,6 +208,7 @@ flowchart LR
     style DataCleaning fill:#4A90A4,stroke:#2C5F6E,color:#fff
     style DataTransform fill:#5BA88F,stroke:#3D7A62,color:#fff
 ```
+</div>
 
 ### dbt (data build tool)
 
