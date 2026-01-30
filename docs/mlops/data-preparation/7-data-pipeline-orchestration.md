@@ -174,9 +174,11 @@ XYZShopSmart implemented Apache Airflow to manage their data pipelines:
 6. **Monitoring Dashboard**: The team monitors all pipelines from one interface, with Slack alerts for failures
 7. **Resource Management**: Spark jobs run on larger worker instances while lightweight tasks use standard workers
 
+<div style={{textAlign: 'center'}}>
+
 ```mermaid
 flowchart LR
-    subgraph DAG["XYZShopSmart Daily Pipeline"]
+    subgraph DAG["Data Pipelines"]
         CRM[Extract CRM Data]
         ORDERS[Extract Orders]
         SPARK[Transform in Spark]
@@ -193,6 +195,8 @@ flowchart LR
     
     style DAG fill:#5BA88F,stroke:#3D7A62,color:#fff
 ```
+
+</div>
 
 With orchestration in place, the team shifted from firefighting pipeline failures to proactively improving data quality.
 

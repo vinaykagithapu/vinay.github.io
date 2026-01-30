@@ -54,8 +54,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/vinaykagithapu/vinaykagithapu.github.io/tree/main/',
+          //editUrl:
+          //  'https://github.com/vinaykagithapu/vinaykagithapu.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
