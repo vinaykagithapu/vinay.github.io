@@ -26,13 +26,15 @@ After deploying their recommendation system, XYZShopSmart's team realized they n
 
 The MLOps architecture consists of three interconnected tracks: the **Data Pipeline**, the **ML Pipeline**, and the **Production Loop**. Each track handles specific responsibilities while feeding into the next.
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
-flowchart TB
+flowchart TD
     subgraph Problem["Problem Statement"]
         PS[Define Problem]
     end
     
     subgraph DataPipeline["Data Pipeline"]
+        direction LR
         DC[Data Collection]
         DI[Data Ingestion]
         DT[Data Transformation<br/>& Cleaning]
@@ -45,6 +47,7 @@ flowchart TB
     end
     
     subgraph MLPipeline["ML Pipeline"]
+        direction LR
         FE[Feature Engineering]
         ME[Model Exploration]
         MB[Model Building]
@@ -57,6 +60,7 @@ flowchart TB
     end
     
     subgraph Production["Production Loop"]
+        direction LR
         MM[Model Monitoring<br/>& Debugging]
         MR[Model Redeployed]
     end
@@ -99,6 +103,7 @@ flowchart TB
     style Q1 fill:#F5A623,stroke:#C4841D,color:#fff
     style Q2 fill:#F5A623,stroke:#C4841D,color:#fff
 ```
+</div>
 
 ---
 

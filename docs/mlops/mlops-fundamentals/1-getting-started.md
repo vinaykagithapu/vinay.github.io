@@ -28,6 +28,7 @@ Research suggests only 20% of ML models reach production. The remaining 80% stay
 
 **MLOps (Machine Learning Operations)** combines Machine Learning, DevOps, and Data Engineering to deploy and maintain ML systems in production reliably.
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
 flowchart LR
     ML[Machine Learning]
@@ -44,6 +45,7 @@ flowchart LR
     style DAT fill:#7B68A6,stroke:#4E4272,color:#fff
     style MLO fill:#E07B53,stroke:#A65535,color:#fff
 ```
+</div>
 
 MLOps enables organizations to:
 

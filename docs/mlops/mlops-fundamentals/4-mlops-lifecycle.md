@@ -26,6 +26,7 @@ The result? A six-month delay while the team backtracked to build overlooked inf
 
 The MLOps lifecycle consists of four interconnected phases that form a continuous loop.
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
 flowchart TB
     DC[1. Data Exploration]
@@ -43,6 +44,7 @@ flowchart TB
     style TDP fill:#7B68A6,stroke:#4E4272,color:#fff
     style OP fill:#E07B53,stroke:#A65535,color:#fff
 ```
+</div>
 
 :::warning Reality Check
 Data Exploration takes 30-40% of total project time. Many teams underestimate this phase, leading to poor model performance and delayed timelines.

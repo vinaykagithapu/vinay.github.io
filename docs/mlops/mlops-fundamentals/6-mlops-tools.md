@@ -240,20 +240,24 @@ The team integrated Optuna into their CT pipeline:
 
 ## Choosing the Right Tool Stack
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph Version["Version Control"]
+        direction LR
         Git[Git/GitHub]
         DVC[DVC]
     end
     
     subgraph CI["Continuous Integration"]
+        direction LR
         Jenkins[Jenkins]
         GitLabCI[GitLab CI]
         CircleCI[CircleCI]
     end
     
     subgraph CD["Continuous Deployment"]
+        direction LR
         Kubeflow[Kubeflow]
         Terraform[Terraform]
         ArgoCD[ArgoCD]
@@ -271,8 +275,8 @@ flowchart TB
     
     Version --> CI
     CI --> CD
-    Track --> CD
     CD --> Infra
+    CD <--> Track
     
     style Version fill:#4A90A4,stroke:#2C5F6E,color:#fff
     style CI fill:#5BA88F,stroke:#3D7A62,color:#fff
@@ -280,6 +284,7 @@ flowchart TB
     style Track fill:#E07B53,stroke:#A65535,color:#fff
     style Infra fill:#6B8E23,stroke:#4A6B1A,color:#fff
 ```
+</div>
 
 Start with the tools that address your biggest pain points:
 

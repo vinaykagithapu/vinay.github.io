@@ -28,6 +28,7 @@ The team realized their notebook couldn't handle 5 million users, had no strateg
 
 An MLOps Engineer is a DevOps engineer with specialized ML expertise. They combine traditional operations skills — infrastructure, automation, monitoring — with ML-specific knowledge about training pipelines, model serving, and performance tracking.
 
+<div style={{textAlign: 'center'}}>
 ```mermaid
 flowchart LR
     subgraph devops[DevOps Skills]
@@ -51,6 +52,7 @@ flowchart LR
     style M1 fill:#5BA88F,stroke:#3D7A62,color:#fff
     style M2 fill:#5BA88F,stroke:#3D7A62,color:#fff
 ```
+</div>
 
 This combination distinguishes MLOps Engineers from traditional DevOps practitioners. They deploy systems that learn, adapt, and require continuous attention to data quality and model performance.
 
