@@ -2,7 +2,7 @@
 slug: clawdbot-ai-agent
 title: "Clawdbot (OpenClaw): Personal AI Assistant That Actually Does Things"
 authors: [vinay]
-tags: [ai, ,ai-agent, chatbot, llm, conversational-ai, nlp, python, machine-learning]
+tags: [ai, ai-agent, chatbot, llm, conversational-ai, nlp, python, machine-learning]
 ---
 
 # Clawdbot (OpenClaw): The Open-Source Personal AI Assistant That Actually Does Things
