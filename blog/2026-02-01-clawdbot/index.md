@@ -9,6 +9,8 @@ tags: [ai, ai-agent, chatbot, llm, conversational-ai, nlp, python, machine-learn
 
 *A comprehensive guide to understanding, deploying, and using Clawdbot/OpenClaw - the viral AI assistant that executes real tasks on your computer*
 
+<!-- truncate -->
+
 ---
 
 ## 1. What is Clawdbot?
