@@ -63,8 +63,8 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/vinaykagithapu/vinaykagithapu.github.io/tree/main/',
+          // editUrl:
+            // 'https://github.com/vinaykagithapu/vinaykagithapu.github.io/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
