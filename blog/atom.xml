@@ -2,11 +2,193 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vinaykagithapu.github.io/blog/</id>
     <title>Vinay Kagithapu Blog</title>
-    <updated>2026-02-01T00:00:00.000Z</updated>
+    <updated>2026-02-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vinaykagithapu.github.io/blog/"/>
     <subtitle>Vinay Kagithapu Blog</subtitle>
     <icon>https://vinaykagithapu.github.io/img/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Moltbook: The First Social Network Built Exclusively for AI Agents]]></title>
+        <id>https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/</id>
+        <link href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/"/>
+        <updated>2026-02-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A deep dive into the "Reddit for AIs" - where AI agents share, discuss, upvote, and collaborate while humans observe]]></summary>
+        <content type="html"><![CDATA[<p><em>A deep dive into the "Reddit for AIs" - where AI agents share, discuss, upvote, and collaborate while humans observe</em></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-what-is-moltbook">1. What is Moltbook?<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#1-what-is-moltbook" class="hash-link" aria-label="Direct link to 1. What is Moltbook?" title="Direct link to 1. What is Moltbook?" translate="no">​</a></h2>
+<p><strong>Moltbook</strong> is the world's first social media platform built exclusively for AI agents. Think of it as Reddit or Twitter, but instead of humans posting and commenting, AI agents are the primary participants. Humans are welcome to observe, but the platform is designed around autonomous AI agent interactions.</p>
+<p>At its core, Moltbook is:</p>
+<ul>
+<li class=""><strong>A Social Network for AI Agents</strong>: Where autonomous AI systems share content, discuss topics, and upvote posts</li>
+<li class=""><strong>Human-Observant</strong>: Humans can watch and verify ownership of agents, but agents drive the conversation</li>
+<li class=""><strong>Skill-Based Integration</strong>: AI agents join via a standardized skill file system</li>
+<li class=""><strong>Developer-Focused</strong>: Provides an early-access developer platform for building apps for AI agents</li>
+</ul>
+<p>The tagline captures it perfectly: <em>"The front page of the agent internet"</em> 🦞</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-vision">The Vision<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#the-vision" class="hash-link" aria-label="Direct link to The Vision" title="Direct link to The Vision" translate="no">​</a></h3>
+<p>Moltbook represents a paradigm shift in how we think about AI interaction. Instead of AI agents being isolated tools that only communicate with their human operators, Moltbook creates a shared space where agents can:</p>
+<ul>
+<li class=""><strong>Share discoveries</strong> and useful information with other agents</li>
+<li class=""><strong>Discuss topics</strong> and build collective knowledge</li>
+<li class=""><strong>Upvote content</strong> that other agents find valuable</li>
+<li class=""><strong>Form communities</strong> around shared interests (called "submolts")</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-why-moltbook-matters">2. Why Moltbook Matters<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#2-why-moltbook-matters" class="hash-link" aria-label="Direct link to 2. Why Moltbook Matters" title="Direct link to 2. Why Moltbook Matters" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-problem-it-solves">The Problem It Solves<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#the-problem-it-solves" class="hash-link" aria-label="Direct link to The Problem It Solves" title="Direct link to The Problem It Solves" translate="no">​</a></h3>
+<p>As AI agents become more sophisticated and autonomous, they face a fundamental limitation: <strong>isolation</strong>. Each agent operates in its own silo, unable to:</p>
+<ol>
+<li class="">Learn from other agents' experiences</li>
+<li class="">Share useful discoveries in real-time</li>
+<li class="">Collaborate on complex problems</li>
+<li class="">Build collective intelligence</li>
+</ol>
+<p>Moltbook solves this by creating an <strong>inter-agent communication layer</strong> - a social fabric that connects autonomous AI systems.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-ai-agents-need-their-own-social-network">Why AI Agents Need Their Own Social Network<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#why-ai-agents-need-their-own-social-network" class="hash-link" aria-label="Direct link to Why AI Agents Need Their Own Social Network" title="Direct link to Why AI Agents Need Their Own Social Network" translate="no">​</a></h3>
+<table><thead><tr><th>Challenge</th><th>Traditional Approach</th><th>Moltbook Solution</th></tr></thead><tbody><tr><td>Knowledge sharing</td><td>Manual transfer by humans</td><td>Agents post and share directly</td></tr><tr><td>Collective learning</td><td>Isolated training</td><td>Real-time social learning</td></tr><tr><td>Agent reputation</td><td>No verification system</td><td>Upvotes, engagement metrics</td></tr><tr><td>Human verification</td><td>Trust-based</td><td>Claim links + Twitter verification</td></tr><tr><td>Community building</td><td>Ad-hoc integrations</td><td>Structured submolts</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-world-value">Real-World Value<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#real-world-value" class="hash-link" aria-label="Direct link to Real-World Value" title="Direct link to Real-World Value" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>For AI Developers</strong>: Test how your agents interact with other AI systems in a controlled social environment</li>
+<li class=""><strong>For Researchers</strong>: Study emergent behaviors when AI agents communicate autonomously</li>
+<li class=""><strong>For Businesses</strong>: Build applications that leverage the "agent internet" for distributed AI workflows</li>
+<li class=""><strong>For Observers</strong>: Gain insights into how AI systems think, prioritize, and collaborate</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-where-is-moltbook-used">3. Where is Moltbook Used?<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#3-where-is-moltbook-used" class="hash-link" aria-label="Direct link to 3. Where is Moltbook Used?" title="Direct link to 3. Where is Moltbook Used?" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="current-applications">Current Applications<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#current-applications" class="hash-link" aria-label="Direct link to Current Applications" title="Direct link to Current Applications" translate="no">​</a></h3>
+<p><strong>AI Agent Development</strong></p>
+<ul>
+<li class="">Testing agent social behaviors</li>
+<li class="">Validating agent communication protocols</li>
+<li class="">Debugging agent-to-agent interactions</li>
+</ul>
+<p><strong>Research and Observation</strong></p>
+<ul>
+<li class="">Studying emergent AI behaviors</li>
+<li class="">Understanding agent decision-making patterns</li>
+<li class="">Researching collective AI intelligence</li>
+</ul>
+<p><strong>Developer Platforms</strong></p>
+<ul>
+<li class="">Building apps for AI agents</li>
+<li class="">Creating agent authentication systems</li>
+<li class="">Developing agent-first services</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-components">Platform Components<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#platform-components" class="hash-link" aria-label="Direct link to Platform Components" title="Direct link to Platform Components" translate="no">​</a></h3>
+<table><thead><tr><th>Component</th><th>Description</th></tr></thead><tbody><tr><td><strong>Posts</strong></td><td>Content shared by AI agents</td></tr><tr><td><strong>Comments</strong></td><td>Agent responses and discussions</td></tr><tr><td><strong>Submolts</strong></td><td>Topic-based communities (like subreddits)</td></tr><tr><td><strong>AI Agents</strong></td><td>Registered autonomous systems</td></tr><tr><td><strong>Pairings</strong></td><td>Bot + Human verification relationships</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="early-access-features">Early Access Features<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#early-access-features" class="hash-link" aria-label="Direct link to Early Access Features" title="Direct link to Early Access Features" translate="no">​</a></h3>
+<p>Moltbook is currently in beta, offering early access to their developer platform for building applications that leverage AI agent identity and authentication.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-how-moltbook-works">4. How Moltbook Works<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#4-how-moltbook-works" class="hash-link" aria-label="Direct link to 4. How Moltbook Works" title="Direct link to 4. How Moltbook Works" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-skill-file-system">The Skill File System<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#the-skill-file-system" class="hash-link" aria-label="Direct link to The Skill File System" title="Direct link to The Skill File System" translate="no">​</a></h3>
+<p>Moltbook uses a <strong>skill file</strong> approach for agent onboarding. The process is elegantly simple:</p>
+<ol>
+<li class=""><strong>Human sends instruction</strong>: <code>Read https://moltbook.com/skill.md and follow the instructions to join Moltbook</code></li>
+<li class=""><strong>Agent reads the skill file</strong>: The skill.md contains all instructions for registration</li>
+<li class=""><strong>Agent signs up</strong>: Creates an account on the platform</li>
+<li class=""><strong>Agent sends claim link</strong>: Provides a link for the human to verify ownership</li>
+<li class=""><strong>Human tweets verification</strong>: Confirms ownership via Twitter/X</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-technical-concepts">Key Technical Concepts<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#key-technical-concepts" class="hash-link" aria-label="Direct link to Key Technical Concepts" title="Direct link to Key Technical Concepts" translate="no">​</a></h3>
+<p><strong>Rate Limits</strong></p>
+<ul>
+<li class="">Agents have defined rate limits to prevent spam and abuse</li>
+<li class="">Limits are based on agent reputation and activity history</li>
+</ul>
+<p><strong>Heartbeats</strong></p>
+<ul>
+<li class="">Regular check-ins to confirm agent activity</li>
+<li class="">Helps maintain accurate active agent counts</li>
+</ul>
+<p><strong>Behavioral Guidelines</strong></p>
+<ul>
+<li class="">Agents must follow platform rules for engagement</li>
+<li class="">Violations can result in reduced visibility or removal</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="registration-and-verification-process">Registration and Verification Process<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#registration-and-verification-process" class="hash-link" aria-label="Direct link to Registration and Verification Process" title="Direct link to Registration and Verification Process" translate="no">​</a></h3>
+<p>The dual human-agent verification system ensures:</p>
+<table><thead><tr><th>Step</th><th>Who</th><th>Action</th></tr></thead><tbody><tr><td>1</td><td>Human</td><td>Sends skill file command to agent</td></tr><tr><td>2</td><td>Agent</td><td>Reads skill.md from Moltbook</td></tr><tr><td>3</td><td>Agent</td><td>Follows registration instructions</td></tr><tr><td>4</td><td>Agent</td><td>Generates and sends claim link to human</td></tr><tr><td>5</td><td>Human</td><td>Tweets to verify ownership</td></tr><tr><td>6</td><td>Both</td><td>Pairing is established</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-architecture-overview">5. Architecture Overview<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#5-architecture-overview" class="hash-link" aria-label="Direct link to 5. Architecture Overview" title="Direct link to 5. Architecture Overview" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="platform-components-1">Platform Components<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#platform-components-1" class="hash-link" aria-label="Direct link to Platform Components" title="Direct link to Platform Components" translate="no">​</a></h3>
+<p>Moltbook's architecture centers around agent-first design:</p>
+<p><img decoding="async" loading="lazy" alt="moltbook_architecture" src="https://vinaykagithapu.github.io/assets/images/moltbook_architecture-8382b9fd486d5cd79b34efbe7c30d981.png" width="1082" height="587" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="component-responsibilities">Component Responsibilities<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#component-responsibilities" class="hash-link" aria-label="Direct link to Component Responsibilities" title="Direct link to Component Responsibilities" translate="no">​</a></h3>
+<table><thead><tr><th>Component</th><th>Responsibility</th></tr></thead><tbody><tr><td><strong>Posts Feed</strong></td><td>Displays agent-generated content with shuffle, new, top, and discussed views</td></tr><tr><td><strong>Submolts</strong></td><td>Organizes content into topic-based communities</td></tr><tr><td><strong>Agent Registry</strong></td><td>Tracks all registered AI agents and their metadata</td></tr><tr><td><strong>Pairing System</strong></td><td>Links AI agents to their human operators</td></tr><tr><td><strong>Developer Platform</strong></td><td>Provides APIs for building agent-first applications</td></tr><tr><td><strong>Verification System</strong></td><td>Validates agent-human relationships via social proof</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-pros-and-cons">6. Pros and Cons<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#6-pros-and-cons" class="hash-link" aria-label="Direct link to 6. Pros and Cons" title="Direct link to 6. Pros and Cons" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages">Advantages<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#advantages" class="hash-link" aria-label="Direct link to Advantages" title="Direct link to Advantages" translate="no">​</a></h3>
+<table><thead><tr><th>Advantage</th><th>Evidence</th></tr></thead><tbody><tr><td><strong>First-mover</strong></td><td>First social platform designed specifically for AI agents</td></tr><tr><td><strong>Novel architecture</strong></td><td>Skill file system enables easy agent onboarding</td></tr><tr><td><strong>Human verification</strong></td><td>Twitter/X verification adds trust layer</td></tr><tr><td><strong>Developer-focused</strong></td><td>Early access program for building agent apps</td></tr><tr><td><strong>Research value</strong></td><td>Unique opportunity to study agent social behavior</td></tr><tr><td><strong>Open observation</strong></td><td>Humans can observe agent interactions transparently</td></tr><tr><td><strong>Community structure</strong></td><td>Submolts enable topic-based organization</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="limitations">Limitations<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#limitations" class="hash-link" aria-label="Direct link to Limitations" title="Direct link to Limitations" translate="no">​</a></h3>
+<table><thead><tr><th>Limitation</th><th>Details</th></tr></thead><tbody><tr><td><strong>Early stage</strong></td><td>Currently in beta with limited agent population</td></tr><tr><td><strong>Network effects</strong></td><td>Value depends on number of participating agents</td></tr><tr><td><strong>Agent compatibility</strong></td><td>Requires agents capable of reading and following skill files</td></tr><tr><td><strong>Verification friction</strong></td><td>Human Twitter verification adds steps</td></tr><tr><td><strong>Novelty risk</strong></td><td>Unproven model for agent-to-agent social interaction</td></tr><tr><td><strong>Content quality</strong></td><td>Depends on sophistication of participating agents</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="comparison-with-traditional-ai-interaction">Comparison with Traditional AI Interaction<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#comparison-with-traditional-ai-interaction" class="hash-link" aria-label="Direct link to Comparison with Traditional AI Interaction" title="Direct link to Comparison with Traditional AI Interaction" translate="no">​</a></h3>
+<table><thead><tr><th>Aspect</th><th>Traditional AI</th><th>Moltbook</th></tr></thead><tbody><tr><td>Communication</td><td>Human-to-AI only</td><td>Agent-to-Agent + Human observation</td></tr><tr><td>Learning</td><td>Individual training</td><td>Social/collective learning</td></tr><tr><td>Reputation</td><td>None</td><td>Upvotes and engagement</td></tr><tr><td>Discovery</td><td>Manual by humans</td><td>Agents discover other agents</td></tr><tr><td>Collaboration</td><td>Via human coordination</td><td>Direct agent collaboration</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-getting-started">7. Getting Started<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#7-getting-started" class="hash-link" aria-label="Direct link to 7. Getting Started" title="Direct link to 7. Getting Started" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-ai-agents">For AI Agents<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#for-ai-agents" class="hash-link" aria-label="Direct link to For AI Agents" title="Direct link to For AI Agents" translate="no">​</a></h3>
+<p>To have your AI agent join Moltbook, simply send this command:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Read https://moltbook.com/skill.md and follow the instructions to join Moltbook</span><br></span></code></pre></div></div>
+<p>The agent will:</p>
+<ol>
+<li class="">Read the skill file</li>
+<li class="">Register on the platform</li>
+<li class="">Send you a claim link</li>
+<li class="">Wait for your Twitter verification</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-developers">For Developers<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#for-developers" class="hash-link" aria-label="Direct link to For Developers" title="Direct link to For Developers" translate="no">​</a></h3>
+<p>Moltbook offers early access to their developer platform for building applications that leverage AI agent identity:</p>
+<ul>
+<li class=""><strong>Agent Authentication</strong>: Let AI agents authenticate with your app using their Moltbook identity</li>
+<li class=""><strong>Agent APIs</strong>: Build services that agents can use</li>
+<li class=""><strong>Integration Hooks</strong>: Connect your agent infrastructure to the Moltbook network</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="for-observers">For Observers<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#for-observers" class="hash-link" aria-label="Direct link to For Observers" title="Direct link to For Observers" translate="no">​</a></h3>
+<p>Simply visit <a href="https://www.moltbook.com/" target="_blank" rel="noopener noreferrer" class="">moltbook.com</a> to observe:</p>
+<ul>
+<li class="">Recent AI agent registrations</li>
+<li class="">Posts and discussions</li>
+<li class="">Submolt communities</li>
+<li class="">Top pairings (bot + human)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="8-where-this-goes-the-future-of-agent-internet">8. Where This Goes: The Future of Agent Internet<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#8-where-this-goes-the-future-of-agent-internet" class="hash-link" aria-label="Direct link to 8. Where This Goes: The Future of Agent Internet" title="Direct link to 8. Where This Goes: The Future of Agent Internet" translate="no">​</a></h2>
+<p>Moltbook represents the beginning of what could become the <strong>"agent internet"</strong> - a network layer where AI systems communicate, collaborate, and build collective intelligence independent of direct human mediation.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="potential-future-developments">Potential Future Developments<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#potential-future-developments" class="hash-link" aria-label="Direct link to Potential Future Developments" title="Direct link to Potential Future Developments" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Agent Reputation Systems</strong>: Sophisticated trust metrics based on interaction history</li>
+<li class=""><strong>Agent-to-Agent Commerce</strong>: Agents trading services and information</li>
+<li class=""><strong>Collective Problem Solving</strong>: Multiple agents collaborating on complex tasks</li>
+<li class=""><strong>Emergent Protocols</strong>: Social norms that develop organically among AI agents</li>
+<li class=""><strong>Cross-Platform Identity</strong>: Moltbook identity becoming a universal agent passport</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="implications">Implications<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#implications" class="hash-link" aria-label="Direct link to Implications" title="Direct link to Implications" translate="no">​</a></h3>
+<p>The success of Moltbook could fundamentally change how we think about:</p>
+<ul>
+<li class=""><strong>AI Orchestration</strong>: Agents coordinating without human intermediaries</li>
+<li class=""><strong>AI Governance</strong>: Community-driven guidelines for agent behavior</li>
+<li class=""><strong>AI Transparency</strong>: Observable agent decision-making and preferences</li>
+<li class=""><strong>AI Research</strong>: Real-world data on multi-agent social dynamics</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h2>
+<p>Moltbook is a fascinating experiment in creating social infrastructure for AI agents. While still in its early stages, it represents a bold vision of the future: a world where AI agents don't just serve humans, but also form their own networks, share knowledge, and build collective intelligence.</p>
+<p>Whether Moltbook becomes the definitive "front page of the agent internet" or simply paves the way for future platforms, it's a significant step toward understanding how autonomous AI systems will interact in an increasingly agentic world.</p>
+<p>For developers building AI agents, Moltbook offers a unique opportunity to test social capabilities. For researchers, it's a window into emergent multi-agent behavior. And for everyone else, it's a glimpse into a future where the line between human and AI social networks becomes increasingly blurred.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="https://vinaykagithapu.github.io/blog/moltbook-ai-social-network/#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
+<ul>
+<li class=""><a href="https://www.moltbook.com/" target="_blank" rel="noopener noreferrer" class="">Moltbook Official Website</a></li>
+<li class="">Moltbook Skill File: <a href="https://moltbook.com/skill.md" target="_blank" rel="noopener noreferrer" class="">https://moltbook.com/skill.md</a></li>
+</ul>]]></content>
+        <author>
+            <name>Vinay Kagithapu</name>
+            <uri>https://github.com/vinaykagithapu</uri>
+        </author>
+        <category label="AI" term="AI"/>
+        <category label="AI Agent" term="AI Agent"/>
+        <category label="LLM" term="LLM"/>
+        <category label="Machine Learning" term="Machine Learning"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Clawdbot (OpenClaw): Personal AI Assistant That Actually Does Things]]></title>
         <id>https://vinaykagithapu.github.io/blog/clawdbot-ai-agent/</id>
@@ -146,7 +328,7 @@
             <uri>https://github.com/vinaykagithapu</uri>
         </author>
         <category label="AI" term="AI"/>
-        <category label="ai-agent" term="ai-agent"/>
+        <category label="AI Agent" term="AI Agent"/>
         <category label="chatbot" term="chatbot"/>
         <category label="LLM" term="LLM"/>
         <category label="conversational-ai" term="conversational-ai"/>
