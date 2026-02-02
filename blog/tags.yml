@@ -33,6 +33,11 @@ ai:
   permalink: /ai
   description: Artificial Intelligence and Machine Learning
 
+ai-agent:
+  label: AI Agent
+  permalink: /ai-agent
+  description: Autonomous AI agents and agentic systems
+
 nlp:
   label: NLP
   permalink: /nlp
