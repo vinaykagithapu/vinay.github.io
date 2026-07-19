@@ -8,17 +8,17 @@
     <subtitle>Vinay Kagithapu Blog</subtitle>
     <icon>https://vinaykagithapu.github.io/img/favicon.svg</icon>
     <entry>
-        <title type="html"><![CDATA[CNCF — The Cloud Native Playbook]]></title>
+        <title type="html"><![CDATA[CNCF: The Cloud Native Playbook]]></title>
         <id>https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/</id>
         <link href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/"/>
         <updated>2026-07-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Cloud Native Computing Foundation (CNCF) is the open-source home for the software that runs modern applications — Kubernetes, Prometheus, Envoy, Cilium, and 180+ more. For engineers and architects, navigating that landscape can feel overwhelming. This playbook distills it into a clear mental model: what the CNCF is, how the pieces fit together, and what a production-grade cloud-native stack actually looks like — from what it is → how the pieces fit → how to run it in production.]]></summary>
-        <content type="html"><![CDATA[<p>The <strong>Cloud Native Computing Foundation (CNCF)</strong> is the open-source home for the software that runs modern applications — Kubernetes, Prometheus, Envoy, Cilium, and 180+ more. For engineers and architects, navigating that landscape can feel overwhelming. This playbook distills it into a clear mental model: what the CNCF is, how the pieces fit together, and what a production-grade cloud-native stack actually looks like — from <em>what it is</em> → <em>how the pieces fit</em> → <em>how to run it in production</em>.</p>
+        <summary type="html"><![CDATA[The Cloud Native Computing Foundation (CNCF) is the open-source home for the software that runs modern applications what the CNCF is, how the pieces fit together, and what a production-grade cloud-native stack actually looks like, walking from what it is → how the pieces fit → how to run it in production.]]></summary>
+        <content type="html"><![CDATA[<p>The <strong>Cloud Native Computing Foundation (CNCF)</strong> is the open-source home for the software that runs modern applications: Kubernetes, Prometheus, Envoy, Cilium, and 180+ more. For engineers and architects, navigating that landscape can feel overwhelming. This playbook distills it into a clear mental model: what the CNCF is, how the pieces fit together, and what a production-grade cloud-native stack actually looks like, walking from <em>what it is</em> → <em>how the pieces fit</em> → <em>how to run it in production</em>.</p>
 <!-- -->
 <p><strong>Same software, any cloud.</strong> That portability is the whole point.</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-what-is-the-cncf">1. What is the CNCF?<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#1-what-is-the-cncf" class="hash-link" aria-label="Direct link to 1. What is the CNCF?" title="Direct link to 1. What is the CNCF?" translate="no">​</a></h2>
-<p><strong>CNCF</strong> = <strong>Cloud Native Computing Foundation</strong> — a sub-foundation of the Linux Foundation that hosts open-source projects for building modern, cloud-native applications.</p>
+<p><strong>CNCF</strong> = <strong>Cloud Native Computing Foundation</strong>, a sub-foundation of the Linux Foundation that hosts open-source projects for building modern, cloud-native applications.</p>
 <ul>
 <li class=""><strong>Not</strong> a cloud provider. It ships <em>software</em>; AWS, Azure, and GCP ship <em>infrastructure</em>.</li>
 <li class=""><strong>Not</strong> a vendor. It's a <strong>neutral, vendor-neutral</strong> home where competitors collaborate.</li>
@@ -26,30 +26,30 @@
 </ul>
 <table><thead><tr><th>Attribute</th><th>CNCF</th><th>Cloud Provider</th></tr></thead><tbody><tr><td>Delivers</td><td>Open-source software</td><td>Infrastructure &amp; managed services</td></tr><tr><td>Ownership</td><td>Community / Linux Foundation</td><td>Vendor</td></tr><tr><td>Portability</td><td>Any cloud</td><td>Vendor-locked by default</td></tr><tr><td>Cost model</td><td>Free + operational effort</td><td>Pay-as-you-go</td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-why-it-exists--a-brief-history">2. Why It Exists — A Brief History<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#2-why-it-exists--a-brief-history" class="hash-link" aria-label="Direct link to 2. Why It Exists — A Brief History" title="Direct link to 2. Why It Exists — A Brief History" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-why-it-exists-a-brief-history">2. Why It Exists: A Brief History<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#2-why-it-exists-a-brief-history" class="hash-link" aria-label="Direct link to 2. Why It Exists: A Brief History" title="Direct link to 2. Why It Exists: A Brief History" translate="no">​</a></h2>
 <p>Before 2015, every hyperscaler built its own internal tools to run distributed systems:</p>
-<table><thead><tr><th>Company</th><th>Built</th><th>Donated</th></tr></thead><tbody><tr><td>Google</td><td>Borg → Kubernetes</td><td>Kubernetes (2015)</td></tr><tr><td>Lyft</td><td>Envoy</td><td>Envoy (2017)</td></tr><tr><td>SoundCloud</td><td>Prometheus</td><td>Prometheus (2016)</td></tr><tr><td>Twitter</td><td>Finagle</td><td>—</td></tr></tbody></table>
+<table><thead><tr><th>Company</th><th>Built</th><th>Donated</th></tr></thead><tbody><tr><td>Google</td><td>Borg → Kubernetes</td><td>Kubernetes (2015)</td></tr><tr><td>Lyft</td><td>Envoy</td><td>Envoy (2017)</td></tr><tr><td>SoundCloud</td><td>Prometheus</td><td>Prometheus (2016)</td></tr><tr><td>Twitter</td><td>Finagle</td><td>-</td></tr></tbody></table>
 <p>In <strong>2015</strong>, the <strong>Linux Foundation</strong> created the CNCF so these tools could live in one <strong>neutral, community-driven</strong> home. Google donated <strong>Kubernetes</strong> as the founding project.</p>
 <!-- -->
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-what-cloud-native-really-means">3. What "Cloud Native" Really Means<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#3-what-cloud-native-really-means" class="hash-link" aria-label="Direct link to 3. What &quot;Cloud Native&quot; Really Means" title="Direct link to 3. What &quot;Cloud Native&quot; Really Means" translate="no">​</a></h2>
 <p>Per the CNCF's definition, <strong>cloud native</strong> uses <strong>containers, service meshes, microservices, and immutable infrastructure</strong> declared via declarative APIs.</p>
-<p>In plain English — an app built to be <strong>scalable, resilient, automated, observable, and portable</strong>.</p>
+<p>In plain English: an app built to be <strong>scalable, resilient, automated, observable, and portable</strong>.</p>
 <!-- -->
-<p>Instead of one monolith on one server, you get <strong>small services</strong> that scale and heal on their own — deployed from Git, monitored continuously, and runnable anywhere.</p>
+<p>Instead of one monolith on one server, you get <strong>small services</strong> that scale and heal on their own, deployed from Git, monitored continuously, and runnable anywhere.</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-the-cncf-landscape-at-a-glance">4. The CNCF Landscape at a Glance<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#4-the-cncf-landscape-at-a-glance" class="hash-link" aria-label="Direct link to 4. The CNCF Landscape at a Glance" title="Direct link to 4. The CNCF Landscape at a Glance" translate="no">​</a></h2>
-<p>The <a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF Landscape</a> hosts <strong>180+ projects</strong> across functional categories. The full landscape is overwhelming — here is the mental model that matters.</p>
+<p>The <a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF Landscape</a> hosts <strong>180+ projects</strong> across functional categories. The full landscape is overwhelming; here is the mental model that matters.</p>
 <!-- -->
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-the-core-kubernetes-architecture">5. The Core: Kubernetes Architecture<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#5-the-core-kubernetes-architecture" class="hash-link" aria-label="Direct link to 5. The Core: Kubernetes Architecture" title="Direct link to 5. The Core: Kubernetes Architecture" translate="no">​</a></h2>
-<p>Kubernetes is the <strong>orchestrator</strong> — it deploys, schedules, scales, and heals your containers. Think of it as a <strong>platform for building platforms</strong>; nearly everything else in the CNCF plugs into it.</p>
+<p>Kubernetes is the <strong>orchestrator</strong>: it deploys, schedules, scales, and heals your containers. Think of it as a <strong>platform for building platforms</strong>; nearly everything else in the CNCF plugs into it.</p>
 <!-- -->
 <p><strong>Control plane</strong> = brain (desired state, scheduling, reconciliation).
 <strong>Worker nodes</strong> = muscle (run your pods via a container runtime like <code>containerd</code>).</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-the-stack-how-the-pieces-fit">6. The Stack: How the Pieces Fit<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#6-the-stack-how-the-pieces-fit" class="hash-link" aria-label="Direct link to 6. The Stack: How the Pieces Fit" title="Direct link to 6. The Stack: How the Pieces Fit" translate="no">​</a></h2>
-<p>A cloud-native platform is <strong>layered</strong>. Each layer is a <em>composable</em> CNCF project — you pick the right tool per layer.</p>
+<p>A cloud-native platform is <strong>layered</strong>. Each layer is a <em>composable</em> CNCF project; you pick the right tool per layer.</p>
 <!-- -->
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-key-projects-by-category">7. Key Projects by Category<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#7-key-projects-by-category" class="hash-link" aria-label="Direct link to 7. Key Projects by Category" title="Direct link to 7. Key Projects by Category" translate="no">​</a></h2>
@@ -61,51 +61,51 @@
 <table><thead><tr><th>Stage</th><th>What it proves</th><th>Example</th></tr></thead><tbody><tr><td>Sandbox</td><td>Worth experimenting</td><td>Many early projects</td></tr><tr><td>Incubating</td><td>Real adoption, healthy governance</td><td>Longhorn, OpenEBS</td></tr><tr><td>Graduated</td><td>Battle-tested at scale</td><td>Kubernetes, Prometheus, Envoy, Cilium, Argo, Helm</td></tr></tbody></table>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="9-production-reference-architecture">9. Production Reference Architecture<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#9-production-reference-architecture" class="hash-link" aria-label="Direct link to 9. Production Reference Architecture" title="Direct link to 9. Production Reference Architecture" translate="no">​</a></h2>
-<p>This is the centerpiece — what a <strong>production-grade, cloud-native stack</strong> actually looks like in the real world.</p>
+<p>This is the centerpiece: what a <strong>production-grade, cloud-native stack</strong> actually looks like in the real world.</p>
 <!-- -->
 <blockquote>
-<p><strong>Key idea:</strong> No single product does all of this. CNCF projects are <strong>composable</strong> — each layer is a swappable, best-of-breed tool that integrates via open standards (CNI, CSI, CRI, OCI, OpenTelemetry).</p>
+<p><strong>Key idea:</strong> No single product does all of this. CNCF projects are <strong>composable</strong>: each layer is a swappable, best-of-breed tool that integrates via open standards (CNI, CSI, CRI, OCI, OpenTelemetry).</p>
 </blockquote>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="10-production-grade-considerations">10. Production-Grade Considerations<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#10-production-grade-considerations" class="hash-link" aria-label="Direct link to 10. Production-Grade Considerations" title="Direct link to 10. Production-Grade Considerations" translate="no">​</a></h2>
 <p>A cluster isn't "production" until it survives failure. The CNCF ecosystem gives you the tools; <strong>you</strong> own the architecture.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-security">🔒 Security<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#-security" class="hash-link" aria-label="Direct link to 🔒 Security" title="Direct link to 🔒 Security" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Supply chain</strong> — scan images with <strong>Trivy</strong> in CI; sign with <strong>cosign</strong>; enforce with admission (Kyverno/OPA).</li>
-<li class=""><strong>Identity</strong> — <strong>SPIFFE/SPIRE</strong> for workload identity; <strong>cert-manager</strong> for TLS rotation.</li>
-<li class=""><strong>Policy</strong> — <strong>Kyverno / OPA Gatekeeper</strong> at admission; <strong>Falco</strong> at runtime.</li>
-<li class=""><strong>Secrets</strong> — <strong>External Secrets Operator</strong> + Vault / cloud KMS; never commit plaintext.</li>
+<li class=""><strong>Supply chain</strong>: scan images with <strong>Trivy</strong> in CI; sign with <strong>cosign</strong>; enforce with admission (Kyverno/OPA).</li>
+<li class=""><strong>Identity</strong>: <strong>SPIFFE/SPIRE</strong> for workload identity; <strong>cert-manager</strong> for TLS rotation.</li>
+<li class=""><strong>Policy</strong>: <strong>Kyverno / OPA Gatekeeper</strong> at admission; <strong>Falco</strong> at runtime.</li>
+<li class=""><strong>Secrets</strong>: <strong>External Secrets Operator</strong> + Vault / cloud KMS; never commit plaintext.</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-observability">📊 Observability<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#-observability" class="hash-link" aria-label="Direct link to 📊 Observability" title="Direct link to 📊 Observability" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>The three pillars</strong> — metrics (Prometheus), logs (Loki), traces (OpenTelemetry → Jaeger/Tempo).</li>
-<li class=""><strong>SLOs over uptime</strong> — define error budgets, alert on user impact, not CPU.</li>
+<li class=""><strong>The three pillars</strong>: metrics (Prometheus), logs (Loki), traces (OpenTelemetry → Jaeger/Tempo).</li>
+<li class=""><strong>SLOs over uptime</strong>: define error budgets, alert on user impact, not CPU.</li>
 <li class=""><strong>Grafana</strong> as the single pane; ship everything to it.</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-gitops--reliability">🔁 GitOps &amp; Reliability<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#-gitops--reliability" class="hash-link" aria-label="Direct link to 🔁 GitOps &amp; Reliability" title="Direct link to 🔁 GitOps &amp; Reliability" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Git is the source of truth</strong> — Argo CD / Flux reconciles continuously; no <code>kubectl apply</code> by hand.</li>
-<li class=""><strong>Progressive delivery</strong> — Argo Rollouts / Flagger for canaries and blue-green.</li>
-<li class=""><strong>Multi-cluster</strong> — Argo ApplicationSets, Cluster API for fleet management.</li>
+<li class=""><strong>Git is the source of truth</strong>: Argo CD / Flux reconciles continuously; no <code>kubectl apply</code> by hand.</li>
+<li class=""><strong>Progressive delivery</strong>: Argo Rollouts / Flagger for canaries and blue-green.</li>
+<li class=""><strong>Multi-cluster</strong>: Argo ApplicationSets, Cluster API for fleet management.</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-resilience--dr">🛡️ Resilience &amp; DR<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#%EF%B8%8F-resilience--dr" class="hash-link" aria-label="Direct link to 🛡️ Resilience &amp; DR" title="Direct link to 🛡️ Resilience &amp; DR" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Backups</strong> — Velero for cluster resources + PV snapshots; test restores quarterly.</li>
-<li class=""><strong>HA control plane</strong> — 3 etcd nodes, multi-AZ workers, PDBs on workloads.</li>
-<li class=""><strong>Chaos engineering</strong> — Chaos Mesh in staging to prove the system fails gracefully.</li>
+<li class=""><strong>Backups</strong>: Velero for cluster resources + PV snapshots; test restores quarterly.</li>
+<li class=""><strong>HA control plane</strong>: 3 etcd nodes, multi-AZ workers, PDBs on workloads.</li>
+<li class=""><strong>Chaos engineering</strong>: Chaos Mesh in staging to prove the system fails gracefully.</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-scaling--cost">⚖️ Scaling &amp; Cost<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#%EF%B8%8F-scaling--cost" class="hash-link" aria-label="Direct link to ⚖️ Scaling &amp; Cost" title="Direct link to ⚖️ Scaling &amp; Cost" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>Autoscale</strong> — HPA (CPU) + VPA + KEDA (event-driven) + Cluster Autoscaler / Karpenter.</li>
-<li class=""><strong>Right-size</strong> — goldilocks; burn rate alerts on cost.</li>
-<li class=""><strong>Bin-packing</strong> — node taints/tolerations + priority classes.</li>
+<li class=""><strong>Autoscale</strong>: HPA (CPU) + VPA + KEDA (event-driven) + Cluster Autoscaler / Karpenter.</li>
+<li class=""><strong>Right-size</strong>: goldilocks; burn rate alerts on cost.</li>
+<li class=""><strong>Bin-packing</strong>: node taints/tolerations + priority classes.</li>
 </ul>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="11-walkthrough-deploying-an-app-end-to-end">11. Walkthrough: Deploying an App End-to-End<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#11-walkthrough-deploying-an-app-end-to-end" class="hash-link" aria-label="Direct link to 11. Walkthrough: Deploying an App End-to-End" title="Direct link to 11. Walkthrough: Deploying an App End-to-End" translate="no">​</a></h2>
-<p>The cloud-native way — from a developer's laptop to a running, monitored, secured service:</p>
+<p>The cloud-native way, from a developer's laptop to a running, monitored, secured service:</p>
 <!-- -->
 <ol>
-<li class=""><strong>Git</strong> holds your desired state — manifests + Helm values.</li>
+<li class=""><strong>Git</strong> holds your desired state: manifests + Helm values.</li>
 <li class=""><strong>CI</strong> builds, scans, and pushes an immutable image to the registry, then bumps the manifest.</li>
 <li class=""><strong>Argo CD</strong> detects the Git change and reconciles it to the cluster.</li>
 <li class=""><strong>Kubernetes</strong> schedules the pods; <strong>Cilium</strong> wires the network; <strong>Istio</strong> enforces mTLS.</li>
@@ -134,43 +134,43 @@ Cloud-native = <em>how</em> you build (portable, open). Cloud provider = <em>whe
 CNCF projects reduce lock-in, but managed services (EKS/GKE) still embed some. Use open standards (CNI, CSI, Helm, OTel) to stay portable.</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="15-conclusion">15. Conclusion<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#15-conclusion" class="hash-link" aria-label="Direct link to 15. Conclusion" title="Direct link to 15. Conclusion" translate="no">​</a></h2>
-<p>The CNCF can feel overwhelming because it's <em>big</em> — but the mental model is small: <strong>Kubernetes at the center, composable open-source projects layered around it, Git as the source of truth, and observability + security baked in.</strong> You don't adopt all of it at once. You start with the core, add layers as your needs grow, and let open standards (CNI, CSI, CRI, OCI, OpenTelemetry) keep you portable across any cloud.</p>
+<p>The CNCF can feel overwhelming because it's <em>big</em>, but the mental model is small: <strong>Kubernetes at the center, composable open-source projects layered around it, Git as the source of truth, and observability + security baked in.</strong> You don't adopt all of it at once. You start with the core, add layers as your needs grow, and let open standards (CNI, CSI, CRI, OCI, OpenTelemetry) keep you portable across any cloud.</p>
 <p>The discipline matters more than the tooling: declarative state, progressive delivery, SLO-driven observability, and tested disaster recovery are what turn a cluster into a <em>production</em> cluster. Master the discipline, and the specific projects become swap-in implementation details.</p>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="16-resources--references">16. Resources &amp; References<a href="https://vinaykagithapu.github.io/blog/cncf-cloud-native-playbook/#16-resources--references" class="hash-link" aria-label="Direct link to 16. Resources &amp; References" title="Direct link to 16. Resources &amp; References" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>Official</strong>
 <ul>
-<li class=""><a href="https://www.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF — cncf.io</a></li>
-<li class=""><a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF Landscape — landscape.cncf.io</a></li>
+<li class=""><a href="https://www.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF</a></li>
+<li class=""><a href="https://landscape.cncf.io/" target="_blank" rel="noopener noreferrer" class="">CNCF Landscape</a></li>
 <li class=""><a href="https://github.com/cncf/trailmap" target="_blank" rel="noopener noreferrer" class="">Cloud Native Trail Map</a></li>
-<li class=""><a href="https://kubernetes.io/docs/home/" target="_blank" rel="noopener noreferrer" class="">Kubernetes Docs — kubernetes.io</a></li>
+<li class=""><a href="https://kubernetes.io/docs/home/" target="_blank" rel="noopener noreferrer" class="">Kubernetes Docs</a></li>
 </ul>
 </li>
 <li class=""><strong>Learning</strong>
 <ul>
 <li class=""><a href="https://www.kubeskills.com/" target="_blank" rel="noopener noreferrer" class="">Kubernetes Academy (free)</a></li>
-<li class=""><a href="https://training.linuxfoundation.org/" target="_blank" rel="noopener noreferrer" class="">Linux Foundation Training — training.linuxfoundation.org</a></li>
-<li class=""><a href="https://killercoda.com/" target="_blank" rel="noopener noreferrer" class="">Killercoda — interactive scenarios</a></li>
+<li class=""><a href="https://training.linuxfoundation.org/" target="_blank" rel="noopener noreferrer" class="">Linux Foundation Training</a></li>
+<li class=""><a href="https://killercoda.com/" target="_blank" rel="noopener noreferrer" class="">Killercoda: interactive scenarios</a></li>
 </ul>
 </li>
 <li class=""><strong>GitOps</strong>
 <ul>
-<li class=""><a href="https://argo-cd.readthedocs.io/" target="_blank" rel="noopener noreferrer" class="">Argo CD — argo-cd.readthedocs.io</a></li>
-<li class=""><a href="https://fluxcd.io/" target="_blank" rel="noopener noreferrer" class="">Flux — fluxcd.io</a></li>
+<li class=""><a href="https://argo-cd.readthedocs.io/" target="_blank" rel="noopener noreferrer" class="">Argo CD</a></li>
+<li class=""><a href="https://fluxcd.io/" target="_blank" rel="noopener noreferrer" class="">Flux</a></li>
 </ul>
 </li>
 <li class=""><strong>Observability</strong>
 <ul>
-<li class=""><a href="https://opentelemetry.io/" target="_blank" rel="noopener noreferrer" class="">OpenTelemetry — opentelemetry.io</a></li>
-<li class=""><a href="https://prometheus.io/" target="_blank" rel="noopener noreferrer" class="">Prometheus — prometheus.io</a></li>
+<li class=""><a href="https://opentelemetry.io/" target="_blank" rel="noopener noreferrer" class="">OpenTelemetry</a></li>
+<li class=""><a href="https://prometheus.io/" target="_blank" rel="noopener noreferrer" class="">Prometheus</a></li>
 </ul>
 </li>
 <li class=""><strong>Security</strong>
 <ul>
-<li class=""><a href="https://falco.org/" target="_blank" rel="noopener noreferrer" class="">Falco — falco.org</a></li>
-<li class=""><a href="https://www.openpolicyagent.org/" target="_blank" rel="noopener noreferrer" class="">OPA — openpolicyagent.org</a></li>
-<li class=""><a href="https://spiffe.io/" target="_blank" rel="noopener noreferrer" class="">SPIFFE — spiffe.io</a></li>
+<li class=""><a href="https://falco.org/" target="_blank" rel="noopener noreferrer" class="">Falco</a></li>
+<li class=""><a href="https://www.openpolicyagent.org/" target="_blank" rel="noopener noreferrer" class="">OPA</a></li>
+<li class=""><a href="https://spiffe.io/" target="_blank" rel="noopener noreferrer" class="">SPIFFE</a></li>
 </ul>
 </li>
 </ul>]]></content>
