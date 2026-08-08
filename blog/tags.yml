@@ -38,6 +38,11 @@ ai-agent:
   permalink: /ai-agent
   description: Autonomous AI agents and agentic systems
 
+mcp:
+  label: MCP
+  permalink: /mcp
+  description: Model Context Protocol and agent tooling standards
+
 nlp:
   label: NLP
   permalink: /nlp
